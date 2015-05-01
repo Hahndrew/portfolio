@@ -1,0 +1,41 @@
+@import url('http://cloud.typography.com/7908354/734746/css/fonts.css');
+
+// Styles related to the general (global) format of pages
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: $font-base;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	color: $paleblack-base;
+}
+
+#{headings()} {
+	font-family: $font-display;
+	color: $paleblack-display;
+}
+
+h1 {
+	font-size: 4.8rem;
+	font-weight: black;
+	line-height: 4.8rem;
+}
+
+h2 {
+	font-size: 2.4rem;
+	font-weight: bold;
+	line-height: 2.4rem;
+}
+
+h3 {
+	font-size: 2.4rem;
+	line-height: 3.6rem;
+}
+
+h4 {
+	font-size: 2.1rem;
+	line-height: 2.4rem;
+}

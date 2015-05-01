@@ -1,0 +1,256 @@
+@import url("http://cloud.typography.com/7908354/734746/css/fonts.css");
+/* line 5, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/***** Colors *****/
+/***** Fonts *****/
+/* line 5, ../components/sass/_base.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 9, ../components/sass/_base.scss */
+body {
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #080401;
+}
+
+/* line 16, ../components/sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Gotham", "Gotham B", sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 21, ../components/sass/_base.scss */
+h1 {
+  font-size: 4.8rem;
+  font-weight: black;
+  line-height: 4.8rem;
+}
+
+/* line 27, ../components/sass/_base.scss */
+h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.4rem;
+}
+
+/* line 33, ../components/sass/_base.scss */
+h3 {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+
+/* line 38, ../components/sass/_base.scss */
+h4 {
+  font-size: 2.1rem;
+  line-height: 2.4rem;
+}
+
+/* line 21, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 13, ../components/sass/_layout.scss */
+body {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 16, ../components/sass/_layout.scss */
+#pageHeader {
+  clear: both;
+  width: 97.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+}
+
+/* line 19, ../components/sass/_layout.scss */
+#logo {
+  width: 22.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+  display: inline;
+}
+
+/* line 23, ../components/sass/_layout.scss */
+#mainNav {
+  width: 39.58333%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+  margin-left: 34.375%;
+}
+
+/* line 27, ../components/sass/_layout.scss */
+#mainNav li {
+  display: inline;
+}
+
+/* line 33, ../components/sass/_layout.scss */
+#designProcessPageHeader {
+  clear: both;
+  width: 97.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+}
+
+/* line 36, ../components/sass/_layout.scss */
+#designProcessPageHeader h1 {
+  text-align: center;
+}
+
+/* line 39, ../components/sass/_layout.scss */
+#designProcess img {
+  clear: both;
+  width: 97.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+}
+
+/* line 42, ../components/sass/_layout.scss */
+#designProcess p {
+  width: 47.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+  margin-left: 26.04167%;
+  text-align: center;
+}
+
+/* line 50, ../components/sass/_layout.scss */
+#timeline {
+  width: 6.25%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+}
+
+/* line 53, ../components/sass/_layout.scss */
+#skillsPageHeader {
+  width: 89.58333%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+}
+
+/* line 56, ../components/sass/_layout.scss */
+#skills {
+  width: 22.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+}
+
+/* line 59, ../components/sass/_layout.scss */
+#workSample {
+  width: 66.66667%;
+  float: left;
+}
+/* line 61, ../components/sass/_layout.scss */
+#workSample #sampleImages {
+  width: 59.375%;
+  float: left;
+  margin-left: 1.5625%;
+  margin-right: 1.5625%;
+}
+/* line 64, ../components/sass/_layout.scss */
+#workSample #sampleDescription {
+  width: 34.375%;
+  float: left;
+  margin-left: 1.5625%;
+  margin-right: 1.5625%;
+}
+
+/* line 71, ../components/sass/_layout.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 15, ../components/sass/styles.scss */
+#designProcess {
+  background-color: #FFFBD2;
+}
+
+/* line 18, ../components/sass/styles.scss */
+#productDefinition {
+  background-color: #FF9985;
+}

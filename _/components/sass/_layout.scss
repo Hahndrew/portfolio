@@ -1,0 +1,73 @@
+// Susy setup ---------------------------------------------
+@include border-box-sizing;
+
+// Global Settings
+$susy: (
+	columns: 12,
+	gutters: 1/3,
+	gutter-position: split,
+);
+
+
+// Global Layout ------------------------------------------
+body {
+	@include container(90%);
+}
+#pageHeader {
+	@include full;
+}
+#logo {
+	@include span(3);
+	display: inline;
+}
+#mainNav {
+	@include span(5);
+	@include push(4);
+}
+#mainNav li {
+	display: inline;
+}
+
+
+// Skills Page 1 -------------------------------------------
+#designProcessPageHeader {
+	@include full;
+}
+#designProcessPageHeader h1 {
+	text-align: center;
+}
+#designProcess img {
+	@include full;
+}
+#designProcess p {
+	@include span(6);
+	@include push(3);
+	text-align: center;
+}
+
+
+// Skills Page 2 - 6 ---------------------------------------
+#timeline {
+	@include span(1);
+}
+#skillsPageHeader {
+	@include span(11);
+}
+#skills {
+	@include span(3);
+}
+#workSample {
+	@include span(8 nest);
+		#sampleImages {
+			@include span(5 of 8);
+		}
+		#sampleDescription {
+			@include span(3 of 8);
+		}
+}
+
+
+// Responsive Images ---------------------------------------
+img {
+	max-width: 100%;
+}
