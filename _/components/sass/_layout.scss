@@ -16,7 +16,7 @@ body {
 
 #logo {
 	@include span(3);
-} //#logo
+}
 
 #mainNav {
 	@include span(5);
@@ -29,13 +29,10 @@ body {
 
 
 // Skills Page 1 -------------------------------------------
-#designProcessPageHeader {
+#designProcessPageTitle {
 	@include full;
-
-	h1 {
-		text-align: center;
-	} //h1
-}//#designProcessPageHeader
+	text-align: center;
+}
 
 #designProcess {
 
@@ -55,20 +52,40 @@ body {
 // Skills Page 2 - 6 ---------------------------------------
 #timeline {
 	@include span(1);
-}
-#skillsPageHeader {
+} //#timeline
+
+#skillsPageTitle {
 	@include span(11);
+	@include push(1);
 }
+
 #skills {
 	@include span(3);
+	@include push(1);
 }
+
 #workSample {
 	@include span(8 nest);
 		#sampleImages {
 			@include span(5 of 8);
+			// placeholder
+			img {
+				max-width: 100%;
+			}
 		}
 		#sampleDescription {
 			@include span(3 of 8);
 		}
 }
 
+
+// Responsive Images ----------------------------------------
+.mini-chart {
+	max-width: 100%;
+	margin-left: 2%;
+}
+
+// Semantic Markups - Hide ----------------------------------
+.semantic-markup {
+	display: none;
+}
