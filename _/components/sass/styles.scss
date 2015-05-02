@@ -34,3 +34,15 @@
 	background-color: $background-aqua;
 }
 
+
+// Typography ------------------------------------------------
+
+#logo {
+	font-weight: 500; //Medium
+	text-transform: uppercase;
+
+	span {
+		font-weight: 300; //Light
+		} //span
+		
+} //logo

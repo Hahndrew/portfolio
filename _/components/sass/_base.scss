@@ -7,27 +7,34 @@ html {
 }
 
 body {
-	font-family: $font-base;
+	font-family: $base-font;
 	font-size: 1.6rem;
 	line-height: 2.4rem;
+	font-weight: 400;
+	font-style: normal;
 	color: $paleblack-base;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 #{headings()} {
-	font-family: $font-display;
+	font-family: $display-font;
 	color: $paleblack-display;
 }
 
 h1 {
 	font-size: 4.8rem;
-	font-weight: black;
 	line-height: 4.8rem;
+	font-weight: 800; //Black
 }
 
 h2 {
 	font-size: 2.4rem;
-	font-weight: bold;
 	line-height: 2.4rem;
+	font-weight: 700; //Bold
 }
 
 h3 {
@@ -39,3 +46,4 @@ h4 {
 	font-size: 2.1rem;
 	line-height: 2.4rem;
 }
+
