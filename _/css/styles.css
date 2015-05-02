@@ -131,25 +131,15 @@ body:after {
   clear: both;
 }
 
-/* line 16, ../components/sass/_layout.scss */
-#pageHeader {
-  clear: both;
-  width: 97.91667%;
-  float: left;
-  margin-left: 1.04167%;
-  margin-right: 1.04167%;
-}
-
-/* line 19, ../components/sass/_layout.scss */
+/* line 17, ../components/sass/_layout.scss */
 #logo {
   width: 22.91667%;
   float: left;
   margin-left: 1.04167%;
   margin-right: 1.04167%;
-  display: inline;
 }
 
-/* line 23, ../components/sass/_layout.scss */
+/* line 21, ../components/sass/_layout.scss */
 #mainNav {
   width: 39.58333%;
   float: left;
@@ -157,13 +147,12 @@ body:after {
   margin-right: 1.04167%;
   margin-left: 34.375%;
 }
-
-/* line 27, ../components/sass/_layout.scss */
+/* line 25, ../components/sass/_layout.scss */
 #mainNav li {
   display: inline;
 }
 
-/* line 33, ../components/sass/_layout.scss */
+/* line 32, ../components/sass/_layout.scss */
 #designProcessPageHeader {
   clear: both;
   width: 97.91667%;
@@ -171,22 +160,21 @@ body:after {
   margin-left: 1.04167%;
   margin-right: 1.04167%;
 }
-
-/* line 36, ../components/sass/_layout.scss */
+/* line 35, ../components/sass/_layout.scss */
 #designProcessPageHeader h1 {
   text-align: center;
 }
 
-/* line 39, ../components/sass/_layout.scss */
+/* line 42, ../components/sass/_layout.scss */
 #designProcess img {
   clear: both;
   width: 97.91667%;
   float: left;
   margin-left: 1.04167%;
   margin-right: 1.04167%;
+  max-width: 100%;
 }
-
-/* line 42, ../components/sass/_layout.scss */
+/* line 47, ../components/sass/_layout.scss */
 #designProcess p {
   width: 47.91667%;
   float: left;
@@ -196,7 +184,7 @@ body:after {
   text-align: center;
 }
 
-/* line 50, ../components/sass/_layout.scss */
+/* line 56, ../components/sass/_layout.scss */
 #timeline {
   width: 6.25%;
   float: left;
@@ -204,7 +192,7 @@ body:after {
   margin-right: 1.04167%;
 }
 
-/* line 53, ../components/sass/_layout.scss */
+/* line 59, ../components/sass/_layout.scss */
 #skillsPageHeader {
   width: 89.58333%;
   float: left;
@@ -212,7 +200,7 @@ body:after {
   margin-right: 1.04167%;
 }
 
-/* line 56, ../components/sass/_layout.scss */
+/* line 62, ../components/sass/_layout.scss */
 #skills {
   width: 22.91667%;
   float: left;
@@ -220,29 +208,24 @@ body:after {
   margin-right: 1.04167%;
 }
 
-/* line 59, ../components/sass/_layout.scss */
+/* line 65, ../components/sass/_layout.scss */
 #workSample {
   width: 66.66667%;
   float: left;
 }
-/* line 61, ../components/sass/_layout.scss */
+/* line 67, ../components/sass/_layout.scss */
 #workSample #sampleImages {
   width: 59.375%;
   float: left;
   margin-left: 1.5625%;
   margin-right: 1.5625%;
 }
-/* line 64, ../components/sass/_layout.scss */
+/* line 70, ../components/sass/_layout.scss */
 #workSample #sampleDescription {
   width: 34.375%;
   float: left;
   margin-left: 1.5625%;
   margin-right: 1.5625%;
-}
-
-/* line 71, ../components/sass/_layout.scss */
-img {
-  max-width: 100%;
 }
 
 /* line 15, ../components/sass/styles.scss */

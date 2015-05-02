@@ -13,43 +13,43 @@ $susy: (
 body {
 	@include container(90%);
 }
-#pageHeader {
-	@include full;
-}
+
 #logo {
 	@include span(3);
-	display: inline;
-}
+} //#logo
+
 #mainNav {
 	@include span(5);
 	@include push(4);
-}
-#mainNav li {
-	display: inline;
-}
+
+	li {
+		display: inline;
+	} //li
+} //#mainNav
 
 
 // Skills Page 1 -------------------------------------------
 #designProcessPageHeader {
 	@include full;
-}
-#designProcessPageHeader h1 {
-	text-align: center;
-}
-#designProcess img {
-	@include full;
-}
-#designProcess p {
-	@include span(6);
-	@include push(3);
-	text-align: center;
-}
 
+	h1 {
+		text-align: center;
+	} //h1
+}//#designProcessPageHeader
 
-// NOTE
-// - Skills Page 1 layout almost done.
-// - Set up Skills page 2 - 6.
+#designProcess {
 
+	img {
+		@include full;
+		max-width: 100%;
+	} //img
+
+	p {
+		@include span(6);
+		@include push(3);
+		text-align: center;
+	} //p
+} //#designProcess
 
 
 // Skills Page 2 - 6 ---------------------------------------
@@ -72,8 +72,3 @@ body {
 		}
 }
 
-
-// Responsive Images ---------------------------------------
-img {
-	max-width: 100%;
-}
