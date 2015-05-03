@@ -45,13 +45,17 @@ pre,table,fieldset,hr{
 	} //li
 } //#mainNav
 
+#content {
+	@include clearfix;
+}
+
 
 // Skills Page 1 -------------------------------------------
 #designProcessPageTitle {
 	@include full;
 	text-align: center;
 	
-	margin-top: 4.8rem;
+	margin-top: 2.4rem;
 	margin-bottom: 9.6rem;
 }
 
@@ -80,17 +84,26 @@ pre,table,fieldset,hr{
 // Skills Page 2 - 6 ---------------------------------------
 #timeline {
 	@include span(1);
-}
+	margin-top: 1.8rem;
+
+	img {
+		margin-top: 2.4rem;
+	} //img
+} //#timeline
 
 #skillsPageTitle {
-	@include span(11);
-	@include push(1);
+	@include span(11 at 2);
+	margin-top: 1.2rem;
+	margin-bottom: 3.6rem;
 }
 
 #skills {
-	@include span(3);
-	@include push(1);
-}
+	@include span(3 at 2);
+
+	p {
+		margin-bottom: 6.0rem;
+	} //p
+} //#skills
 
 #workSample {
 	@include span(8 nest);
@@ -116,7 +129,10 @@ pre,table,fieldset,hr{
 	margin-left: 2%;
 }
 
-// Semantic Markups - Hide ----------------------------------
+// Hide ----------------------------------
 .semantic-markup {
 	display: none;
+}
+.hide-visibility {
+	visibility: hidden;
 }
