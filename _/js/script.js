@@ -1,1 +1,1 @@
-function test(){return"hey hi ho hi"}
+jQuery(document).ready(function(a){a("#slider").royalSlider({imageScaleMode:"fit",imageScalePadding:0,controlNavigation:"none",autoScaleSlider:!0,autoScaleSliderWidth:1.5,autoScaleSliderHeight:1,arrowsNavAutoHide:!1,arrowsNavHideOnTouch:!0,transitionSpeed:350,globalCaption:!0})});

@@ -12,7 +12,7 @@ $susy: (
 // Global Layout ------------------------------------------
 body {
 	@include container(90%);
-	margin-top: 2.4rem;
+	margin-top: 1.2rem;
 }
 
 h1,h2,h3,h4,h5,h6,hgroup,
@@ -24,26 +24,25 @@ pre,table,fieldset,hr{
 
 #pageHeader {
 	@include clearfix;
-	padding-bottom: 2.4rem;
+	padding-bottom: 1.2rem;
 
-	ul {
-		margin-bottom: 0;
-	} //ul
+	#logo {
+		@include span(3);
+	} //#logo
 
+	#mainNav {
+		@include span(5);
+		@include push(4);
+
+		ul {
+			margin-bottom: 0;
+
+			li {
+				display: inline;
+			} //li
+		} //ul
+	} //#mainNav
 } //PageHeader
-
-#logo {
-	@include span(3);
-}
-
-#mainNav {
-	@include span(5);
-	@include push(4);
-
-	li {
-		display: inline;
-	} //li
-} //#mainNav
 
 #content {
 	@include clearfix;
@@ -55,12 +54,11 @@ pre,table,fieldset,hr{
 	@include full;
 	text-align: center;
 	
-	margin-top: 2.4rem;
-	margin-bottom: 9.6rem;
+	margin-top: 7.2rem;
+	margin-bottom: 12.0rem;
 }
 
 #designProcess {
-
 	figure {
 		@include span(10);
 		@include push(1);
@@ -69,7 +67,7 @@ pre,table,fieldset,hr{
 			max-width: 100%;
 		} //img
 
-		margin-bottom: 6.0rem;
+		margin-bottom: 7.2rem;
 	} //figure
 
 	p {
@@ -106,21 +104,13 @@ pre,table,fieldset,hr{
 } //#skills
 
 #workSample {
-	@include span(8 nest);
+	@include span(8);
 
-		#sampleImages {
-			@include span(5 of 8);
-			// placeholder
-
-			img {
-				max-width: 100%;
-			} //img
-		} //#sampleImages
-
-		#sampleDescription {
-			@include span(3 of 8);
-		} //#sampleDescription
-}
+	#slider {
+		height: auto;
+		width: auto;
+	} //#slider
+} //#workSample
 
 
 // Responsive Images ----------------------------------------
@@ -128,8 +118,11 @@ pre,table,fieldset,hr{
 	max-width: 100%;
 	margin-left: 2%;
 }
+.royalSlider img {
+	max-width: 100%;
+}
 
-// Hide ----------------------------------
+// Hide -----------------------------------------------------
 .semantic-markup {
 	display: none;
 }
