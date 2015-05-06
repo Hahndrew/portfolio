@@ -152,39 +152,50 @@ pre, table, fieldset, hr {
 #pageHeader {
   overflow: hidden;
   *zoom: 1;
-  padding-bottom: 1.2rem;
 }
-/* line 29, ../components/sass/_layout.scss */
+/* line 28, ../components/sass/_layout.scss */
 #pageHeader #logo {
-  width: 22.91667%;
   float: left;
-  margin-left: 1.04167%;
-  margin-right: 1.04167%;
 }
-/* line 33, ../components/sass/_layout.scss */
+/* line 32, ../components/sass/_layout.scss */
 #pageHeader #mainNav {
-  width: 39.58333%;
-  float: left;
-  margin-left: 1.04167%;
-  margin-right: 1.04167%;
-  margin-left: 34.375%;
+  float: right;
 }
-/* line 37, ../components/sass/_layout.scss */
-#pageHeader #mainNav ul {
+/* line 35, ../components/sass/_layout.scss */
+#pageHeader #mainNav .topmenu {
+  overflow: hidden;
+  *zoom: 1;
   margin-bottom: 0;
 }
-/* line 40, ../components/sass/_layout.scss */
-#pageHeader #mainNav ul li {
-  display: inline;
+/* line 39, ../components/sass/_layout.scss */
+#pageHeader #mainNav .topmenu .dropdown {
+  position: relative;
+}
+/* line 43, ../components/sass/_layout.scss */
+#pageHeader #mainNav .topmenu li {
+  float: left;
+}
+/* line 46, ../components/sass/_layout.scss */
+#pageHeader #mainNav .topmenu li a {
+  display: block;
+  padding: 0 2.4rem 1.2rem 2.4rem;
+}
+/* line 55, ../components/sass/_layout.scss */
+#pageHeader #mainNav .topmenu li .submenu li {
+  float: none;
+}
+/* line 57, ../components/sass/_layout.scss */
+#pageHeader #mainNav .topmenu li .submenu li a {
+  padding-top: 1.2rem;
 }
 
-/* line 47, ../components/sass/_layout.scss */
+/* line 67, ../components/sass/_layout.scss */
 #content {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 53, ../components/sass/_layout.scss */
+/* line 73, ../components/sass/_layout.scss */
 #designProcessPageTitle {
   clear: both;
   width: 97.91667%;
@@ -196,7 +207,7 @@ pre, table, fieldset, hr {
   margin-bottom: 12.0rem;
 }
 
-/* line 62, ../components/sass/_layout.scss */
+/* line 82, ../components/sass/_layout.scss */
 #designProcess figure {
   width: 81.25%;
   float: left;
@@ -205,11 +216,11 @@ pre, table, fieldset, hr {
   margin-left: 9.375%;
   margin-bottom: 7.2rem;
 }
-/* line 66, ../components/sass/_layout.scss */
+/* line 86, ../components/sass/_layout.scss */
 #designProcess figure img {
   max-width: 100%;
 }
-/* line 73, ../components/sass/_layout.scss */
+/* line 93, ../components/sass/_layout.scss */
 #designProcess p {
   width: 47.91667%;
   float: left;
@@ -219,7 +230,7 @@ pre, table, fieldset, hr {
   text-align: center;
 }
 
-/* line 83, ../components/sass/_layout.scss */
+/* line 103, ../components/sass/_layout.scss */
 #timeline {
   width: 6.25%;
   float: left;
@@ -227,12 +238,12 @@ pre, table, fieldset, hr {
   margin-right: 1.04167%;
   margin-top: 1.8rem;
 }
-/* line 87, ../components/sass/_layout.scss */
+/* line 107, ../components/sass/_layout.scss */
 #timeline img {
   margin-top: 2.4rem;
 }
 
-/* line 92, ../components/sass/_layout.scss */
+/* line 112, ../components/sass/_layout.scss */
 #skillsPageTitle {
   width: 89.58333%;
   float: right;
@@ -242,50 +253,95 @@ pre, table, fieldset, hr {
   margin-bottom: 3.6rem;
 }
 
-/* line 98, ../components/sass/_layout.scss */
+/* line 118, ../components/sass/_layout.scss */
 #skills {
   width: 22.91667%;
   float: left;
   margin-left: 1.04167%;
   margin-right: 1.04167%;
 }
-/* line 101, ../components/sass/_layout.scss */
+/* line 121, ../components/sass/_layout.scss */
 #skills p {
   margin-bottom: 6.0rem;
 }
 
-/* line 106, ../components/sass/_layout.scss */
+/* line 126, ../components/sass/_layout.scss */
 #workSample {
   width: 64.58333%;
   float: left;
   margin-left: 1.04167%;
   margin-right: 1.04167%;
 }
-/* line 109, ../components/sass/_layout.scss */
+/* line 129, ../components/sass/_layout.scss */
 #workSample #slider {
   height: auto;
   width: auto;
 }
 
-/* line 117, ../components/sass/_layout.scss */
+/* line 137, ../components/sass/_layout.scss */
 .mini-chart {
   max-width: 100%;
   margin-left: 2%;
 }
 
-/* line 121, ../components/sass/_layout.scss */
+/* line 141, ../components/sass/_layout.scss */
 .royalSlider img {
   max-width: 100%;
 }
 
-/* line 126, ../components/sass/_layout.scss */
+/* line 146, ../components/sass/_layout.scss */
 .semantic-markup {
   display: none;
 }
 
-/* line 129, ../components/sass/_layout.scss */
+/* line 149, ../components/sass/_layout.scss */
 .hide-visibility {
   visibility: hidden;
+}
+
+/* line 8, ../components/sass/_modules.scss */
+.topmenu a:hover {
+  border-bottom: 2px solid black;
+}
+
+/* line 13, ../components/sass/_modules.scss */
+.submenu a:hover {
+  border: none;
+}
+
+/* line 16, ../components/sass/_modules.scss */
+.dp-one a:hover {
+  background: #fff485;
+}
+
+/* line 19, ../components/sass/_modules.scss */
+.dp-two a:hover {
+  background: #ED6346;
+}
+
+/* line 22, ../components/sass/_modules.scss */
+.dp-three a:hover {
+  background: #71C5A6;
+}
+
+/* line 25, ../components/sass/_modules.scss */
+.dp-four a:hover {
+  background: #F8DB88;
+}
+
+/* line 28, ../components/sass/_modules.scss */
+.dp-five a:hover {
+  background: #F68E57;
+}
+
+/* line 31, ../components/sass/_modules.scss */
+.dp-six a:hover {
+  background: #B0DEA1;
+}
+
+/* line 34, ../components/sass/_modules.scss */
+.dp-seven a:hover {
+  background: #67CFCD;
 }
 
 /* line 15, ../components/sass/styles.scss */
@@ -331,4 +387,14 @@ pre, table, fieldset, hr {
 /* line 44, ../components/sass/styles.scss */
 #logo span {
   font-weight: 300;
+}
+
+/* line 52, ../components/sass/styles.scss */
+.current, a:hover.current {
+  border-bottom: 2px solid black;
+}
+
+/* line 56, ../components/sass/styles.scss */
+ul.submenu li a {
+  white-space: nowrap;
 }

@@ -46,3 +46,14 @@
 		} //span
 		
 } //logo
+
+// Navigation (Menu) -----------------------------------------
+
+.current, a:hover.current {
+	border-bottom: 2px solid black;
+}
+
+ul.submenu li a {
+	white-space: nowrap;
+}
+

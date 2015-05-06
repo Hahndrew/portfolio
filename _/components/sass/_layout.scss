@@ -24,25 +24,45 @@ pre,table,fieldset,hr{
 
 #pageHeader {
 	@include clearfix;
-	padding-bottom: 1.2rem;
 
 	#logo {
-		@include span(3);
-	} //#logo
+		float: left;
+	} //logo
 
 	#mainNav {
-		@include span(5);
-		@include push(4);
+		float: right;
 
-		ul {
+		.topmenu {
+			@include clearfix;
 			margin-bottom: 0;
 
+			.dropdown {
+				position: relative;
+			} //dropdown
+
 			li {
-				display: inline;
+				float: left;
+
+				a {
+					display: block;
+					padding: 0 2.4rem 1.2rem 2.4rem;
+				} //a
+
+				.submenu {
+					//position: absolute;
+					//top: 3.8rem;
+					//display: none;
+					li {
+						float: none;
+						a {
+							padding-top: 1.2rem;
+						} //a
+					} //li
+				} //submenu
 			} //li
-		} //ul
-	} //#mainNav
-} //PageHeader
+		} //topmenu
+	} //mainNav
+} //pageHeader
 
 #content {
 	@include clearfix;
@@ -76,7 +96,7 @@ pre,table,fieldset,hr{
 		text-align: center;
 	} //p
 	
-} //#designProcess
+} //designProcess
 
 
 // Skills Page 2 - 6 ---------------------------------------
@@ -87,7 +107,7 @@ pre,table,fieldset,hr{
 	img {
 		margin-top: 2.4rem;
 	} //img
-} //#timeline
+} //timeline
 
 #skillsPageTitle {
 	@include span(11 at 2);
@@ -101,7 +121,7 @@ pre,table,fieldset,hr{
 	p {
 		margin-bottom: 6.0rem;
 	} //p
-} //#skills
+} //skills
 
 #workSample {
 	@include span(8);
@@ -109,8 +129,8 @@ pre,table,fieldset,hr{
 	#slider {
 		height: auto;
 		width: auto;
-	} //#slider
-} //#workSample
+	} //slider
+} //workSample
 
 
 // Responsive Images ----------------------------------------
