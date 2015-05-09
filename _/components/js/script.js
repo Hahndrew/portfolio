@@ -1,4 +1,4 @@
-// Slider Options ----------------------------------------
+// Slider Init & Options ----------------------------------------
 jQuery(document).ready(function($) {
 	$('#slider').royalSlider({
 		// options
@@ -14,3 +14,9 @@ jQuery(document).ready(function($) {
 		globalCaption: true
 	}); //royalSlider
 });//ready()
+
+
+// fullPage Init & Options ---------------------------------------
+$(document).ready(function() {
+    $('#fullpage').fullpage();
+});
