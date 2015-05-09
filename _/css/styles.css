@@ -119,6 +119,20 @@ h4 {
   line-height: 2.4rem;
 }
 
+/* line 2, ../components/sass/_layout.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 7, ../components/sass/_layout.scss */
+#full-size {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 /* line 21, ../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -126,7 +140,7 @@ h4 {
   box-sizing: border-box;
 }
 
-/* line 13, ../components/sass/_layout.scss */
+/* line 26, ../components/sass/_layout.scss */
 body {
   max-width: 90%;
   margin-left: auto;
@@ -140,7 +154,7 @@ body:after {
   clear: both;
 }
 
-/* line 18, ../components/sass/_layout.scss */
+/* line 31, ../components/sass/_layout.scss */
 h1, h2, h3, h4, h5, h6, hgroup,
 ul, ol, dd,
 p, figure,
@@ -148,48 +162,29 @@ pre, table, fieldset, hr {
   margin-bottom: 2.4rem;
 }
 
-/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
-/* For modern browsers */
-/* line 27, ../components/sass/_layout.scss */
-.cf:before, .cf:after {
-  content: "";
-  display: table;
-}
-
-/* line 32, ../components/sass/_layout.scss */
-.cf:after {
-  clear: both;
-}
-
-/* For IE 6/7 (trigger hasLayout) */
-/* line 37, ../components/sass/_layout.scss */
-.cf {
-  zoom: 1;
-}
-
-/* line 42, ../components/sass/_layout.scss */
+/* line 39, ../components/sass/_layout.scss */
 #pageHeader #logo {
   float: left;
 }
-/* line 44, ../components/sass/_layout.scss */
+/* line 41, ../components/sass/_layout.scss */
 #pageHeader #mainNav {
   float: right;
 }
-/* line 47, ../components/sass/_layout.scss */
+/* line 44, ../components/sass/_layout.scss */
 #pageHeader #mainNav .topmenu {
   margin-bottom: 0;
 }
-/* line 50, ../components/sass/_layout.scss */
+/* line 47, ../components/sass/_layout.scss */
 #pageHeader #mainNav .topmenu li {
   float: left;
   position: relative;
 }
-/* line 53, ../components/sass/_layout.scss */
+/* line 50, ../components/sass/_layout.scss */
 #pageHeader #mainNav .topmenu li a {
   display: block;
   padding: 0 2.4rem 1.2rem 2.4rem;
 }
-/* line 57, ../components/sass/_layout.scss */
+/* line 54, ../components/sass/_layout.scss */
 #pageHeader #mainNav .topmenu .submenu {
   float: none;
   width: auto;
@@ -199,22 +194,41 @@ pre, table, fieldset, hr {
   top: 3.8rem;
   left: -9000rem;
 }
-/* line 65, ../components/sass/_layout.scss */
+/* line 62, ../components/sass/_layout.scss */
 #pageHeader #mainNav .topmenu .submenu li {
   float: none;
 }
-/* line 67, ../components/sass/_layout.scss */
+/* line 64, ../components/sass/_layout.scss */
 #pageHeader #mainNav .topmenu .submenu li a {
   padding-top: 1.2rem;
   border-bottom: 1px solid gray;
   white-space: nowrap;
 }
-/* line 70, ../components/sass/_layout.scss */
+/* line 67, ../components/sass/_layout.scss */
 #pageHeader #mainNav .topmenu .submenu li:last-child a {
   border-bottom: none;
 }
 
-/* line 80, ../components/sass/_layout.scss */
+/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack*/
+/* For modern browsers */
+/* line 77, ../components/sass/_layout.scss */
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+/* line 82, ../components/sass/_layout.scss */
+.cf:after {
+  clear: both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+/* line 87, ../components/sass/_layout.scss */
+.cf {
+  zoom: 1;
+}
+
+/* line 93, ../components/sass/_layout.scss */
 #designProcessPageTitle {
   clear: both;
   width: 97.91667%;
@@ -226,7 +240,7 @@ pre, table, fieldset, hr {
   margin-bottom: 12.0rem;
 }
 
-/* line 89, ../components/sass/_layout.scss */
+/* line 102, ../components/sass/_layout.scss */
 #designProcess figure {
   width: 81.25%;
   float: left;
@@ -235,11 +249,11 @@ pre, table, fieldset, hr {
   margin-left: 9.375%;
   margin-bottom: 7.2rem;
 }
-/* line 93, ../components/sass/_layout.scss */
+/* line 106, ../components/sass/_layout.scss */
 #designProcess figure img {
   max-width: 100%;
 }
-/* line 100, ../components/sass/_layout.scss */
+/* line 113, ../components/sass/_layout.scss */
 #designProcess p {
   width: 47.91667%;
   float: left;
@@ -249,7 +263,7 @@ pre, table, fieldset, hr {
   text-align: center;
 }
 
-/* line 110, ../components/sass/_layout.scss */
+/* line 123, ../components/sass/_layout.scss */
 #timeline {
   width: 6.25%;
   float: left;
@@ -257,12 +271,12 @@ pre, table, fieldset, hr {
   margin-right: 1.04167%;
   margin-top: 1.8rem;
 }
-/* line 114, ../components/sass/_layout.scss */
+/* line 127, ../components/sass/_layout.scss */
 #timeline img {
   margin-top: 2.4rem;
 }
 
-/* line 119, ../components/sass/_layout.scss */
+/* line 132, ../components/sass/_layout.scss */
 #skillsPageTitle {
   width: 89.58333%;
   float: right;
@@ -272,100 +286,100 @@ pre, table, fieldset, hr {
   margin-bottom: 3.6rem;
 }
 
-/* line 125, ../components/sass/_layout.scss */
+/* line 138, ../components/sass/_layout.scss */
 #skills {
   width: 22.91667%;
   float: left;
   margin-left: 1.04167%;
   margin-right: 1.04167%;
 }
-/* line 128, ../components/sass/_layout.scss */
+/* line 141, ../components/sass/_layout.scss */
 #skills p {
   margin-bottom: 6.0rem;
 }
 
-/* line 133, ../components/sass/_layout.scss */
+/* line 146, ../components/sass/_layout.scss */
 #workSample {
   width: 64.58333%;
   float: left;
   margin-left: 1.04167%;
   margin-right: 1.04167%;
 }
-/* line 136, ../components/sass/_layout.scss */
+/* line 149, ../components/sass/_layout.scss */
 #workSample #slider {
   height: auto;
   width: auto;
 }
 
-/* line 144, ../components/sass/_layout.scss */
+/* line 157, ../components/sass/_layout.scss */
 .mini-chart {
   max-width: 100%;
   margin-left: 2%;
 }
 
-/* line 148, ../components/sass/_layout.scss */
+/* line 161, ../components/sass/_layout.scss */
 .royalSlider img {
   max-width: 100%;
 }
 
-/* line 153, ../components/sass/_layout.scss */
+/* line 166, ../components/sass/_layout.scss */
 .semantic-markup {
   display: none;
 }
 
-/* line 156, ../components/sass/_layout.scss */
+/* line 169, ../components/sass/_layout.scss */
 .hide-visibility {
   visibility: hidden;
 }
 
-/* line 8, ../components/sass/_modules.scss */
+/* line 4, ../components/sass/_modules.scss */
 .topmenu a:hover {
   border-bottom: 2px solid black;
 }
 
-/* line 13, ../components/sass/_modules.scss */
+/* line 10, ../components/sass/_modules.scss */
+.topmenu li:hover ul {
+  left: 0 !important;
+}
+
+/* line 14, ../components/sass/_modules.scss */
 .submenu a:hover {
   border: none;
 }
 
-/* line 16, ../components/sass/_modules.scss */
+/* line 18, ../components/sass/_modules.scss */
 .dp-one a:hover {
   background: #fff485;
 }
 
-/* line 19, ../components/sass/_modules.scss */
+/* line 21, ../components/sass/_modules.scss */
 .dp-two a:hover {
   background: #ED6346;
 }
 
-/* line 22, ../components/sass/_modules.scss */
+/* line 24, ../components/sass/_modules.scss */
 .dp-three a:hover {
   background: #71C5A6;
 }
 
-/* line 25, ../components/sass/_modules.scss */
+/* line 27, ../components/sass/_modules.scss */
 .dp-four a:hover {
   background: #F8DB88;
 }
 
-/* line 28, ../components/sass/_modules.scss */
+/* line 30, ../components/sass/_modules.scss */
 .dp-five a:hover {
   background: #F68E57;
 }
 
-/* line 31, ../components/sass/_modules.scss */
+/* line 33, ../components/sass/_modules.scss */
 .dp-six a:hover {
   background: #B0DEA1;
 }
 
-/* line 34, ../components/sass/_modules.scss */
+/* line 36, ../components/sass/_modules.scss */
 .dp-seven a:hover {
   background: #67CFCD;
-}
-
-/* line 39, ../components/sass/_modules.scss */
-.topmenu li:hover ul {
-  left: 0 !important;
 }
 
 /* line 15, ../components/sass/styles.scss */
@@ -418,7 +432,7 @@ pre, table, fieldset, hr {
   border-bottom: 2px solid black;
 }
 
-/* line 56, ../components/sass/styles.scss */
+/* line 55, ../components/sass/styles.scss */
 .submenu {
   background: #fffde6;
 }

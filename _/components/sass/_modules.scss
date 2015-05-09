@@ -1,18 +1,20 @@
-// catch all for anything that isn't a layout or base or mixins
-// little css codes for anything we need for
-
-
-// Navigation Rollover ----------------------------
+// Menu ------------------------------------------
 
 // Topmenu Behavior on Hover
 .topmenu a:hover {
 		border-bottom: 2px solid black;
-} //.topmenu
+}
 
 // Submenu Behavior on Hover
+// Dropdown
+.topmenu li:hover ul {
+	left: 0 !important;
+}
+// Turn-off inherited border-bottom on hover
 .submenu a:hover {
 	border: none;
 }
+// Change background color on hover
 .dp-one a:hover {
 	background: darken($background-yellow, 15%);
 }
@@ -34,8 +36,5 @@
 .dp-seven a:hover {
 	background: $background-aqua;
 }
+// -------------------------------------------------
 
-
-.topmenu li:hover ul {
-	left: 0 !important;
-}

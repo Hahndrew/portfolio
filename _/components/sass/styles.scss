@@ -47,12 +47,11 @@
 		
 } //logo
 
-// Navigation (Menu) -----------------------------------------
+// Menu -----------------------------------------
 
 .current, a:hover.current {
 	border-bottom: 2px solid black;
 }
-
 .submenu {
 	background: lighten($background-yellow, 4%);
 }
