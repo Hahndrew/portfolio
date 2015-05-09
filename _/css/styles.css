@@ -148,65 +148,73 @@ pre, table, fieldset, hr {
   margin-bottom: 2.4rem;
 }
 
-/* line 25, ../components/sass/_layout.scss */
-#pageHeader {
-  overflow: hidden;
-  *zoom: 1;
+/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
+/* For modern browsers */
+/* line 27, ../components/sass/_layout.scss */
+.cf:before, .cf:after {
+  content: "";
+  display: table;
 }
-/* line 28, ../components/sass/_layout.scss */
+
+/* line 32, ../components/sass/_layout.scss */
+.cf:after {
+  clear: both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+/* line 37, ../components/sass/_layout.scss */
+.cf {
+  zoom: 1;
+}
+
+/* line 42, ../components/sass/_layout.scss */
 #pageHeader #logo {
   float: left;
 }
-/* line 30, ../components/sass/_layout.scss */
+/* line 44, ../components/sass/_layout.scss */
 #pageHeader #mainNav {
   float: right;
 }
-/* line 33, ../components/sass/_layout.scss */
+/* line 47, ../components/sass/_layout.scss */
 #pageHeader #mainNav .topmenu {
-  overflow: hidden;
-  *zoom: 1;
   margin-bottom: 0;
 }
-/* line 37, ../components/sass/_layout.scss */
+/* line 50, ../components/sass/_layout.scss */
 #pageHeader #mainNav .topmenu li {
   float: left;
   position: relative;
 }
-/* line 40, ../components/sass/_layout.scss */
+/* line 53, ../components/sass/_layout.scss */
 #pageHeader #mainNav .topmenu li a {
   display: block;
   padding: 0 2.4rem 1.2rem 2.4rem;
 }
-/* line 44, ../components/sass/_layout.scss */
+/* line 57, ../components/sass/_layout.scss */
 #pageHeader #mainNav .topmenu .submenu {
   float: none;
   width: auto;
   height: auto;
+  position: absolute;
+  z-index: 10;
   top: 3.8rem;
   left: -9000rem;
 }
-/* line 53, ../components/sass/_layout.scss */
+/* line 65, ../components/sass/_layout.scss */
 #pageHeader #mainNav .topmenu .submenu li {
   float: none;
 }
-/* line 55, ../components/sass/_layout.scss */
+/* line 67, ../components/sass/_layout.scss */
 #pageHeader #mainNav .topmenu .submenu li a {
   padding-top: 1.2rem;
   border-bottom: 1px solid gray;
   white-space: nowrap;
 }
-/* line 58, ../components/sass/_layout.scss */
+/* line 70, ../components/sass/_layout.scss */
 #pageHeader #mainNav .topmenu .submenu li:last-child a {
   border-bottom: none;
 }
 
-/* line 66, ../components/sass/_layout.scss */
-#content {
-  overflow: hidden;
-  *zoom: 1;
-}
-
-/* line 72, ../components/sass/_layout.scss */
+/* line 80, ../components/sass/_layout.scss */
 #designProcessPageTitle {
   clear: both;
   width: 97.91667%;
@@ -218,7 +226,7 @@ pre, table, fieldset, hr {
   margin-bottom: 12.0rem;
 }
 
-/* line 81, ../components/sass/_layout.scss */
+/* line 89, ../components/sass/_layout.scss */
 #designProcess figure {
   width: 81.25%;
   float: left;
@@ -227,11 +235,11 @@ pre, table, fieldset, hr {
   margin-left: 9.375%;
   margin-bottom: 7.2rem;
 }
-/* line 85, ../components/sass/_layout.scss */
+/* line 93, ../components/sass/_layout.scss */
 #designProcess figure img {
   max-width: 100%;
 }
-/* line 92, ../components/sass/_layout.scss */
+/* line 100, ../components/sass/_layout.scss */
 #designProcess p {
   width: 47.91667%;
   float: left;
@@ -241,7 +249,7 @@ pre, table, fieldset, hr {
   text-align: center;
 }
 
-/* line 102, ../components/sass/_layout.scss */
+/* line 110, ../components/sass/_layout.scss */
 #timeline {
   width: 6.25%;
   float: left;
@@ -249,12 +257,12 @@ pre, table, fieldset, hr {
   margin-right: 1.04167%;
   margin-top: 1.8rem;
 }
-/* line 106, ../components/sass/_layout.scss */
+/* line 114, ../components/sass/_layout.scss */
 #timeline img {
   margin-top: 2.4rem;
 }
 
-/* line 111, ../components/sass/_layout.scss */
+/* line 119, ../components/sass/_layout.scss */
 #skillsPageTitle {
   width: 89.58333%;
   float: right;
@@ -264,48 +272,48 @@ pre, table, fieldset, hr {
   margin-bottom: 3.6rem;
 }
 
-/* line 117, ../components/sass/_layout.scss */
+/* line 125, ../components/sass/_layout.scss */
 #skills {
   width: 22.91667%;
   float: left;
   margin-left: 1.04167%;
   margin-right: 1.04167%;
 }
-/* line 120, ../components/sass/_layout.scss */
+/* line 128, ../components/sass/_layout.scss */
 #skills p {
   margin-bottom: 6.0rem;
 }
 
-/* line 125, ../components/sass/_layout.scss */
+/* line 133, ../components/sass/_layout.scss */
 #workSample {
   width: 64.58333%;
   float: left;
   margin-left: 1.04167%;
   margin-right: 1.04167%;
 }
-/* line 128, ../components/sass/_layout.scss */
+/* line 136, ../components/sass/_layout.scss */
 #workSample #slider {
   height: auto;
   width: auto;
 }
 
-/* line 136, ../components/sass/_layout.scss */
+/* line 144, ../components/sass/_layout.scss */
 .mini-chart {
   max-width: 100%;
   margin-left: 2%;
 }
 
-/* line 140, ../components/sass/_layout.scss */
+/* line 148, ../components/sass/_layout.scss */
 .royalSlider img {
   max-width: 100%;
 }
 
-/* line 145, ../components/sass/_layout.scss */
+/* line 153, ../components/sass/_layout.scss */
 .semantic-markup {
   display: none;
 }
 
-/* line 148, ../components/sass/_layout.scss */
+/* line 156, ../components/sass/_layout.scss */
 .hide-visibility {
   visibility: hidden;
 }
@@ -357,7 +365,7 @@ pre, table, fieldset, hr {
 
 /* line 39, ../components/sass/_modules.scss */
 .topmenu li:hover ul {
-  left: 0;
+  left: 0 !important;
 }
 
 /* line 15, ../components/sass/styles.scss */

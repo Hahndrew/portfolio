@@ -22,16 +22,29 @@ pre,table,fieldset,hr{
     margin-bottom: 2.4rem;
 }
 
-#pageHeader {
-	@include clearfix;
+/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
+/* For modern browsers */
+.cf:before, .cf:after {
+	content:"";
+	display:table;
+}
 
+.cf:after {
+	clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+	zoom:1;
+}
+
+#pageHeader {
 	#logo { float: left;} //logo
 
 	#mainNav {
 		float: right;
 
 		.topmenu {
-			@include clearfix;
 			margin-bottom: 0;
 
 			li {
@@ -45,9 +58,8 @@ pre,table,fieldset,hr{
 				float: none;
 				width: auto;
 				height: auto;
-				// WHY DOES IT DISAPPEAR ******************
-				// WHEN POSITIONED ABSOLUTE?? *************
-				// position: absolute; ********************
+				position: absolute;
+				z-index: 10;
 				top: 3.8rem;
 				left: -9000rem; // pushing it out of view to hide
 				li {
@@ -62,10 +74,6 @@ pre,table,fieldset,hr{
 		} //topmenu
 	} //mainNav
 } //pageHeader
-
-#content {
-	@include clearfix;
-}
 
 
 // Skills Page 1 -------------------------------------------
