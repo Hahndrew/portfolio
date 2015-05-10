@@ -1,6 +1,6 @@
 // Slider Init & Options ----------------------------------------
 jQuery(document).ready(function($) {
-	$('#slider').royalSlider({
+	$('#slider1, #slider2, #slider3, #slider4, #slider5, #slider6').royalSlider({
 		// options
 		imageScaleMode: 'fit',
 		imageScalePadding: 0,
