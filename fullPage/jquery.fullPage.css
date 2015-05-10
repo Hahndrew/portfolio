@@ -179,7 +179,7 @@ html.fp-enabled,
     position: absolute;
     top: -6px;
     left: -2px;
-    color: #282422;
+    color: #ccc;
     font-size: 14px;
     font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif, arial, helvetica, sans-serif;
     white-space: nowrap;
@@ -195,6 +195,7 @@ html.fp-enabled,
     transition: opacity 0.2s ease-in;
     width: auto;
     opacity: 1;
+    z-index: 90;
 }
 #fp-nav ul li .fp-tooltip.right {
     right: 20px;

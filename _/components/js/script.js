@@ -19,14 +19,14 @@ jQuery(document).ready(function($) {
 // fullPage Init & Options ---------------------------------------
 $(document).ready(function() {
     $('#fullpage').fullpage({
+    	// Layout
+    	verticalCentered: true,
+
     	// Navigation
     	anchors: ['design-process', 'product-definition', 'research-analysis',
     			 'interaction-design', 'wireframe-prototype', 'usability-evaluation',
     			  'frontend-programming'],
     	navigation: true,
-    	navigationPosition: 'right',
-    	navigationTooltips: ['Design Process', 'Product Definition', 'Research Analysis',
-    						 'Interaction Design', 'Wireframe & Prototype', 'Usability Evaluation',
-    						 'Frontend Programming']
+    	navigationPosition: 'right'
     });
 });

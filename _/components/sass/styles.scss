@@ -36,7 +36,6 @@
 
 
 // Typography ------------------------------------------------
-
 #logo {
 	font-weight: 500; //Medium
 	text-transform: uppercase;
@@ -47,8 +46,8 @@
 		
 } //logo
 
-// Menu -----------------------------------------
 
+// Menu -----------------------------------------
 .current, a:hover.current {
 	border-bottom: 2px solid black;
 }
@@ -56,3 +55,11 @@
 	background: lighten($background-yellow, 4%);
 }
 
+
+// Footer ----------------------------------------
+#footer {
+	background: rgba(255,255,255,0.1);
+}
+.footer-style {
+	font-size: 1.2rem;
+}
