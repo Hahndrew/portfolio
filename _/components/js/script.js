@@ -23,10 +23,17 @@ $(document).ready(function() {
     	verticalCentered: true,
 
     	// Navigation
-    	anchors: ['design-process', 'product-definition', 'research-analysis',
-    			 'interaction-design', 'wireframe-prototype', 'usability-evaluation',
-    			  'frontend-programming'],
+    	anchors: ['home', 'product-definition', 'research-analysis', 'interaction-design', 'wireframe-prototype', 'usability-evaluation', 'frontend-programming'],
     	navigation: true,
-    	navigationPosition: 'right'
+    	navigationPosition: 'right',
+    	slidesNavigation: false,
+
+    	// Scrolling
+    	loopHorizontal: false,
+
+    	// Design
+    	controlArrows: false,
+
+
     });
 });
