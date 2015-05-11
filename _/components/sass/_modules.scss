@@ -38,3 +38,44 @@
 }
 // -------------------------------------------------
 
+
+// Timeline ----------------------------------------
+.timeline-container {
+	height: 100%;
+	margin-top: 9.0rem; }
+
+.timeline-circle {
+	position: relative;
+	top: 2px;
+	left: -1px;
+	width: 20px;
+	height: 20px;
+	background: black;
+	border: 5px solid $paleblack-display;
+	border-radius: 50%;
+	margin: 0 auto;	}
+
+.timeline-line {
+	width: 50%;
+	height: 100%;
+	border-right: 2.8px solid $paleblack-display; }
+
+.timeline-container-type2 {
+	height: 100%;
+	margin-top: 3.0rem; }
+
+.timeline-circle-type2 {
+	position: relative;
+	top: 60px;
+	left: -1px;
+	width: 20px;
+	height: 20px;
+	background: black;
+	border: 5px solid $paleblack-display;
+	border-radius: 50%;
+	margin: 0 auto;	}
+
+.timeline-line-type3 {
+	width: 50%;
+	height: 6%;
+	border-right: 2.8px solid $paleblack-display; }
