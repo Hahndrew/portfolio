@@ -366,25 +366,68 @@ p {
   margin-right: 1.04167%;
   text-align: center;
   margin-top: 10.8rem;
+  margin-bottom: 9.6rem;
 }
 
-/* line 165, ../components/sass/_layout.scss */
+/* line 164, ../components/sass/_layout.scss */
+#connectPageContent section {
+  width: 66.66667%;
+  float: left;
+  margin-left: 17.70833%;
+}
+/* line 167, ../components/sass/_layout.scss */
+#connectPageContent section p {
+  clear: both;
+  width: 97.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+  text-align: left;
+}
+/* line 171, ../components/sass/_layout.scss */
+#connectPageContent section figure {
+  clear: both;
+  width: 97.91667%;
+  float: left;
+  margin-left: 1.04167%;
+  margin-right: 1.04167%;
+}
+
+/* line 175, ../components/sass/_layout.scss */
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  max-height: 450px;
+}
+
+/* line 182, ../components/sass/_layout.scss */
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* line 191, ../components/sass/_layout.scss */
 .mini-chart {
   max-width: 100%;
   margin-left: 2%;
 }
 
-/* line 169, ../components/sass/_layout.scss */
+/* line 195, ../components/sass/_layout.scss */
 .royalSlider img {
   max-width: 100%;
 }
 
-/* line 173, ../components/sass/_layout.scss */
+/* line 199, ../components/sass/_layout.scss */
 .semantic-markup {
   display: none;
 }
 
-/* line 176, ../components/sass/_layout.scss */
+/* line 202, ../components/sass/_layout.scss */
 .hide-visibility {
   visibility: hidden;
 }
@@ -558,22 +601,33 @@ p {
   font-weight: 200;
 }
 
-/* line 70, ../components/sass/styles.scss */
+/* line 67, ../components/sass/styles.scss */
+#connectPageContent p {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+
+/* line 73, ../components/sass/styles.scss */
+.link {
+  color: #2ead7f;
+}
+
+/* line 79, ../components/sass/styles.scss */
 .current, a:hover.current {
   border-bottom: 2px solid black;
 }
 
-/* line 73, ../components/sass/styles.scss */
+/* line 82, ../components/sass/styles.scss */
 .submenu {
   background: #fffde6;
 }
 
-/* line 80, ../components/sass/styles.scss */
+/* line 89, ../components/sass/styles.scss */
 #footer {
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* line 83, ../components/sass/styles.scss */
+/* line 92, ../components/sass/styles.scss */
 .footer-style {
   font-size: 1.2rem;
 }
