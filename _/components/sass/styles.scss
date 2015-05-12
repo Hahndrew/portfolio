@@ -33,6 +33,12 @@
 .frontendProgramming {
 	background-color: $background-aqua;
 }
+.about {
+	background-color: $background-yellow;
+}
+.connect {
+	background-color: $background-yellow;
+}
 
 
 // Typography ------------------------------------------------
@@ -53,6 +59,7 @@
 .frontendProgramming {
 	h1 {
 		span {
+			font-size: 3.6rem;
 			font-weight: 200;
 		}
 	}
@@ -66,6 +73,7 @@
 .submenu {
 	background: lighten($background-yellow, 4%);
 }
+
 
 
 // Footer -------------------------------------------------

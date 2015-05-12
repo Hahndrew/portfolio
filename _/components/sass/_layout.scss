@@ -8,10 +8,9 @@ $susy: (
 	gutter-position: split,);
 
 
-// Global Layout ------------------------------------------
+// Global Layout ------------------------------------
 body {
-	@include container(100%);
-	margin: 1.2rem;}
+	@include container(100%);}
 
 h1,h2,h3,h4,h5,h6,hgroup,
 ul,ol,dd,
@@ -85,11 +84,11 @@ pre,table,fieldset,hr{
 	zoom:1;}
 
 
-// Skills Page 1 -------------------------------------------
+// Skills Page 1 -----------------------------------
 #designProcessPageTitle {
 	@include full;
 	text-align: center;
-	margin-top: 8.4rem;
+	margin-top: 10.8rem;
 	margin-bottom: 9.6rem;}
 
 figure {
@@ -102,11 +101,10 @@ figure {
 p {
 	@include span(6);
 	@include push(3);
-	text-align: center;
-	margin-bottom: 0;}
+	text-align: center;}
 
 
-// Skills Page 2 - 6 ---------------------------------------
+// Skills Page 2 - 6 ------------------------------
 #timeline {
 	@include span(1);
 	height: 100%;}
@@ -137,8 +135,33 @@ p {
 .frontendProgramming h1 {
 	padding-top: 2.0rem;}
 
+// About Page -------------------------------------
+#aboutPageTitle {
+	@include full;
+	text-align: center;
+	margin-top: 10.8rem;
+	margin-bottom: 9.6rem;
+}
+#aboutPageContent figure {
+	@include span(4 at 2);
+	@include push(2);
+	img {
+		max-width: 100%;
+	}
+}
+#aboutPageContent section p {
+	@include span(4);
+	text-align: left;
+}
 
-// Responsive Images ----------------------------------------
+// Connect Page -----------------------------------
+#connectPageTitle {
+	@include full;
+	text-align: center;
+	margin-top: 10.8rem;
+}
+
+// Responsive Images -------------------------------
 .mini-chart {
 	max-width: 100%;
 	margin-left: 2%;}
@@ -146,7 +169,7 @@ p {
 .royalSlider img {
 	max-width: 100%;}
 
-// Hide -----------------------------------------------------
+// Hide ------------------------------------------
 .semantic-markup {
 	display: none;}
 

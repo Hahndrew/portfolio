@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
 $(document).ready(function() {
     $('#fullpage').fullpage({
     	// Layout
-    	verticalCentered: true,
+    	verticalCentered: false,
 
     	// Navigation
     	anchors: ['home', 'product-definition', 'research-analysis', 'interaction-design', 'wireframe-prototype', 'usability-evaluation', 'frontend-programming'],
