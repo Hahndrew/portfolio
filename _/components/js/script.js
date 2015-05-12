@@ -32,7 +32,7 @@ $(document).ready(function() {
     	loopHorizontal: false,
 
     	// Design
-    	controlArrows: false,
+    	controlArrows: false
 
 
     });

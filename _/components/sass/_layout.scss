@@ -89,20 +89,21 @@ pre,table,fieldset,hr{
 #designProcessPageTitle {
 	@include full;
 	text-align: center;
-	margin-top: 6.0rem;
+	margin-top: 10.8rem;
 	margin-bottom: 9.6rem;}
 
 figure {
-	@include span(10);
-	@include push(1);
+	@include span(8);
+	@include push(2);
 
 	img {max-width: 100%;}
-	margin-bottom: 4.8rem;}
+	margin-bottom: 6.0rem;}
 
 p {
 	@include span(6);
 	@include push(3);
-	text-align: center;} //p
+	text-align: center;
+	margin-bottom: 0;}
 
 
 // Skills Page 2 - 6 ---------------------------------------
@@ -117,7 +118,7 @@ p {
 	margin-bottom: 3.6rem;}
 
 #skills {
-	@include span(3 at 2);
+	@include span(4 at 2);
 
 	p {
 		width: 100%;
@@ -126,13 +127,12 @@ p {
 		text-align: left;} }
 
 #workSample {
-	@include span(7);
+	@include span(6);
 
 	#slider1, #slider2, #slider3, #slider4, #slider5, #slider6 {
-		margin-top: 3.6rem;
-		margin-left: 9.0rem;
+		margin-top: 0.6rem;
 		height: auto;
-		width: auto;} } //workSample
+		width: auto;} }
 
 .frontendProgramming h1 {
 	padding-top: 2.0rem;}

@@ -41,14 +41,19 @@
 	text-transform: uppercase;
 
 	span {
-		font-weight: 300; //Light
+		font-weight: 200; //Light
 		} //span
 } //logo
+
+#designProcessPageTitle {
+	font-size: 4.8rem;
+	line-height: 4.8rem;
+}
 
 .frontendProgramming {
 	h1 {
 		span {
-			font-weight: 300;
+			font-weight: 200;
 		}
 	}
 }
