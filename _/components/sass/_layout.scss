@@ -162,8 +162,8 @@ p {
 	margin-bottom: 9.6rem;
 }
 #connectPageContent section {
-	@include span(8 nest);
-	@include push(2);
+	@include span(6);
+	@include push(3);
 	p {
 		@include full;
 		text-align: left;
@@ -173,18 +173,18 @@ p {
 	}
 }
 .google-maps {
+	margin-top: 3.6rem;
     position: relative;
-    padding-bottom: 75%;
+    padding-bottom: 90%;
     height: 0;
     overflow: hidden;
-    max-height: 450px;
 }
 .google-maps iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100% !important;
-    height: 100% !important;
+    //height: 100% !important;
 }
 
 // Responsive Images -------------------------------
