@@ -277,8 +277,14 @@ pre, table, fieldset, hr {
   margin-right: 1.04167%;
   height: 100%;
 }
+@media (max-width: 886px) {
+  /* line 115, ../components/sass/_layout.scss */
+  #timeline {
+    display: none;
+  }
+}
 
-/* line 119, ../components/sass/_layout.scss */
+/* line 125, ../components/sass/_layout.scss */
 #skillsPageTitle {
   width: 89.58333%;
   float: left;
@@ -287,40 +293,91 @@ pre, table, fieldset, hr {
   margin-top: 6.0rem;
   margin-bottom: 3.6rem;
 }
+@media (max-width: 886px) {
+  /* line 125, ../components/sass/_layout.scss */
+  #skillsPageTitle {
+    clear: both;
+    width: 97.91667%;
+    float: left;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+    font-size: 4.0rem;
+    text-align: center;
+    margin-top: 8.4rem;
+  }
+}
+@media (max-width: 711px) {
+  /* line 141, ../components/sass/_layout.scss */
+  #skillsPageTitle img {
+    display: none;
+  }
+}
 
-/* line 124, ../components/sass/_layout.scss */
+/* line 145, ../components/sass/_layout.scss */
 #skills {
   width: 31.25%;
   float: left;
   margin-left: 1.04167%;
   margin-right: 1.04167%;
 }
-/* line 128, ../components/sass/_layout.scss */
+/* line 147, ../components/sass/_layout.scss */
 #skills p {
   margin-bottom: 6.0rem;
 }
+@media (max-width: 886px) {
+  /* line 145, ../components/sass/_layout.scss */
+  #skills {
+    width: 81.25%;
+    float: left;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+    margin-left: 9.375%;
+  }
+  /* line 153, ../components/sass/_layout.scss */
+  #skills p {
+    margin-bottom: 3.6rem;
+  }
+}
 
-/* line 131, ../components/sass/_layout.scss */
+/* line 160, ../components/sass/_layout.scss */
 #workSample {
   width: 47.91667%;
   float: left;
   margin-left: 1.04167%;
   margin-right: 1.04167%;
   margin-left: 30px;
+  /*
+  SLIDER IS BREAKING THE LAYOUT.
+  TRYING TO FIGURE OUT A WAY TO GET
+  setAutoScroll TO true. BUT NOT SURE
+  IF THAT'LL FIX THE PROBLEM.
+  POSSIBLY SOMETHING WRONG WITH MARGIN-BOTTOM.
+  REGARDLESS, setAutoScroll NEEDS TO BE SET TO true.
+  */
 }
-/* line 135, ../components/sass/_layout.scss */
+/* line 164, ../components/sass/_layout.scss */
 #workSample #slider1, #workSample #slider2, #workSample #slider3, #workSample #slider4, #workSample #slider5, #workSample #slider6 {
   margin-top: 0.6rem;
   height: auto;
   width: auto;
 }
+@media (max-width: 886px) {
+  /* line 160, ../components/sass/_layout.scss */
+  #workSample {
+    width: 81.25%;
+    float: left;
+    margin-left: 1.04167%;
+    margin-right: 1.04167%;
+    margin-left: 9.375%;
+  }
+}
 
-/* line 140, ../components/sass/_layout.scss */
+/* line 189, ../components/sass/_layout.scss */
 .frontendProgramming h1 {
   padding-top: 0.8rem;
 }
 
-/* line 146, ../components/sass/_layout.scss */
+/* line 195, ../components/sass/_layout.scss */
 #aboutPageTitle {
   clear: both;
   width: 97.91667%;
@@ -332,7 +389,7 @@ pre, table, fieldset, hr {
   margin-bottom: 9.6rem;
 }
 
-/* line 152, ../components/sass/_layout.scss */
+/* line 201, ../components/sass/_layout.scss */
 #aboutPageContent figure {
   width: 31.25%;
   float: left;
@@ -340,12 +397,12 @@ pre, table, fieldset, hr {
   margin-right: 1.04167%;
   margin-left: 17.70833%;
 }
-/* line 155, ../components/sass/_layout.scss */
+/* line 204, ../components/sass/_layout.scss */
 #aboutPageContent figure img {
   max-width: 100%;
 }
 
-/* line 159, ../components/sass/_layout.scss */
+/* line 208, ../components/sass/_layout.scss */
 #aboutPageContent section p {
   width: 31.25%;
   float: left;
@@ -354,7 +411,7 @@ pre, table, fieldset, hr {
   text-align: left;
 }
 
-/* line 166, ../components/sass/_layout.scss */
+/* line 215, ../components/sass/_layout.scss */
 #connectPageTitle {
   clear: both;
   width: 97.91667%;
@@ -366,7 +423,7 @@ pre, table, fieldset, hr {
   margin-bottom: 9.6rem;
 }
 
-/* line 172, ../components/sass/_layout.scss */
+/* line 221, ../components/sass/_layout.scss */
 #connectPageContent section {
   width: 47.91667%;
   float: left;
@@ -374,7 +431,7 @@ pre, table, fieldset, hr {
   margin-right: 1.04167%;
   margin-left: 26.04167%;
 }
-/* line 175, ../components/sass/_layout.scss */
+/* line 224, ../components/sass/_layout.scss */
 #connectPageContent section p {
   clear: both;
   width: 97.91667%;
@@ -383,7 +440,7 @@ pre, table, fieldset, hr {
   margin-right: 1.04167%;
   text-align: left;
 }
-/* line 179, ../components/sass/_layout.scss */
+/* line 228, ../components/sass/_layout.scss */
 #connectPageContent section figure {
   clear: both;
   width: 97.91667%;
@@ -392,7 +449,7 @@ pre, table, fieldset, hr {
   margin-right: 1.04167%;
 }
 
-/* line 183, ../components/sass/_layout.scss */
+/* line 232, ../components/sass/_layout.scss */
 .google-maps {
   margin-top: 3.6rem;
   position: relative;
@@ -401,7 +458,7 @@ pre, table, fieldset, hr {
   overflow: hidden;
 }
 
-/* line 190, ../components/sass/_layout.scss */
+/* line 239, ../components/sass/_layout.scss */
 .google-maps iframe {
   position: absolute;
   top: 0;
@@ -409,23 +466,23 @@ pre, table, fieldset, hr {
   width: 100% !important;
 }
 
-/* line 199, ../components/sass/_layout.scss */
+/* line 248, ../components/sass/_layout.scss */
 .mini-chart {
   max-width: 100%;
   margin-left: 2%;
 }
 
-/* line 203, ../components/sass/_layout.scss */
+/* line 252, ../components/sass/_layout.scss */
 .royalSlider img {
   max-width: 100%;
 }
 
-/* line 207, ../components/sass/_layout.scss */
+/* line 256, ../components/sass/_layout.scss */
 .semantic-markup {
   display: none;
 }
 
-/* line 210, ../components/sass/_layout.scss */
+/* line 259, ../components/sass/_layout.scss */
 .hide-visibility {
   visibility: hidden;
 }

@@ -37,3 +37,6 @@ $(document).ready(function() {
 
     });
 });
+
+// fullPage Methods ------------------------------------
+// $.fn.fullpage.setAutoScrolling(true);

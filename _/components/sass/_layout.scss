@@ -1,4 +1,4 @@
-// Susy setup ---------------------------------------------
+// Susy setup ----------------------------------------
 @include border-box-sizing;
 
 // Global Settings
@@ -115,18 +115,47 @@ pre,table,fieldset,hr{
 #timeline {
 	@include span(1);
 	height: 100%;
+
+	// Hide in Medium and Small Layout
+	@include breakpoint($medium){
+		display: none;
+	}
 }
+
 #skillsPageTitle {
+	// LARGE LAYOUT *************
 	@include span(11);
 	margin-top: 6.0rem;
 	margin-bottom: 3.6rem;
+
+	// MEDIUM LAYOUT ************
+	@include breakpoint($medium){
+		@include full;
+		font-size: 4.0rem;
+		text-align: center;
+		margin-top: 8.4rem;
+	}
+
+	// SMALL LAYOUT *************
+	@include breakpoint($small){
+		img {display: none;}
+	}
+
 }
 #skills {
 	@include span(4);
-	// @include full - for smaller screen size
+	p {margin-bottom: 6.0rem;}
 
-	p {
-		margin-bottom: 6.0rem;}
+	// MEDIUM LAYOUT ************
+	@include breakpoint($medium){
+		@include span(10);
+		@include push(1);
+		p {margin-bottom: 3.6rem;}
+	}
+
+	// SMALL LAYOUT *************
+
+
 }
 #workSample {
 	@include span(6);
@@ -136,6 +165,26 @@ pre,table,fieldset,hr{
 		margin-top: 0.6rem;
 		height: auto;
 		width: auto;}
+
+	// MEDIUM LAYOUT ************
+
+	/*
+	SLIDER IS BREAKING THE LAYOUT.
+	TRYING TO FIGURE OUT A WAY TO GET
+	setAutoScroll TO true. BUT NOT SURE
+	IF THAT'LL FIX THE PROBLEM.
+	POSSIBLY SOMETHING WRONG WITH MARGIN-BOTTOM.
+	REGARDLESS, setAutoScroll NEEDS TO BE SET TO true.
+	*/
+
+
+	@include breakpoint($medium){
+		@include span(10);
+		@include push(1);
+	}
+
+	// SMALL LAYOUT *************
+
 }
 .frontendProgramming h1 {
 	padding-top: 0.8rem;
@@ -209,3 +258,4 @@ pre,table,fieldset,hr{
 
 .hide-visibility {
 	visibility: hidden;}
+
