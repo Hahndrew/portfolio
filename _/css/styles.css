@@ -64,8 +64,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/***** Colors *****/
-/***** Typography *****/
+/***** Breakpoints ***********************************/
+/***** Colors ****************************************/
+/***** Typography *************************************/
 /* line 5, ../components/sass/_base.scss */
 html {
   font-size: 62.5%;
@@ -535,100 +536,100 @@ p {
   border-right: 2.8px solid rgba(0, 0, 0, 0.8);
 }
 
-/* line 15, ../components/sass/styles.scss */
+/* line 16, ../components/sass/styles.scss */
 .designProcess {
   background-color: #FFFBD2;
 }
 
-/* line 18, ../components/sass/styles.scss */
+/* line 19, ../components/sass/styles.scss */
 .productDefinition {
   background-color: #FF9985;
 }
 
-/* line 21, ../components/sass/styles.scss */
+/* line 22, ../components/sass/styles.scss */
 .researchAnalysis {
   background-color: #8AE0C1;
 }
 
-/* line 24, ../components/sass/styles.scss */
+/* line 25, ../components/sass/styles.scss */
 .interactionDesign {
   background-color: #FFF59C;
 }
 
-/* line 27, ../components/sass/styles.scss */
+/* line 28, ../components/sass/styles.scss */
 .wireframePrototype {
   background-color: #FFAB7E;
 }
 
-/* line 30, ../components/sass/styles.scss */
+/* line 31, ../components/sass/styles.scss */
 .usabilityEvaluation {
   background-color: #A5D695;
 }
 
-/* line 33, ../components/sass/styles.scss */
+/* line 34, ../components/sass/styles.scss */
 .frontendProgramming {
   background-color: #67CFCD;
 }
 
-/* line 36, ../components/sass/styles.scss */
+/* line 37, ../components/sass/styles.scss */
 .about {
   background-color: #FFFBD2;
 }
 
-/* line 39, ../components/sass/styles.scss */
+/* line 40, ../components/sass/styles.scss */
 .connect {
   background-color: #FFFBD2;
 }
 
-/* line 45, ../components/sass/styles.scss */
+/* line 46, ../components/sass/styles.scss */
 #logo {
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 49, ../components/sass/styles.scss */
+/* line 50, ../components/sass/styles.scss */
 #logo span {
   font-weight: 200;
 }
 
-/* line 54, ../components/sass/styles.scss */
+/* line 55, ../components/sass/styles.scss */
 #designProcessPageTitle {
   font-size: 4.8rem;
   line-height: 4.8rem;
 }
 
-/* line 61, ../components/sass/styles.scss */
+/* line 62, ../components/sass/styles.scss */
 .frontendProgramming h1 span {
   font-size: 3.6rem;
   font-weight: 200;
 }
 
-/* line 67, ../components/sass/styles.scss */
+/* line 68, ../components/sass/styles.scss */
 .large-p {
   font-size: 2.2rem;
   line-height: 3.0rem;
 }
 
-/* line 73, ../components/sass/styles.scss */
+/* line 74, ../components/sass/styles.scss */
 .link {
   color: #2ead7f;
 }
 
-/* line 79, ../components/sass/styles.scss */
+/* line 80, ../components/sass/styles.scss */
 .current, a:hover.current {
   border-bottom: 2px solid black;
 }
 
-/* line 82, ../components/sass/styles.scss */
+/* line 83, ../components/sass/styles.scss */
 .submenu {
   background: #fffde6;
 }
 
-/* line 89, ../components/sass/styles.scss */
+/* line 90, ../components/sass/styles.scss */
 #footer {
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* line 92, ../components/sass/styles.scss */
+/* line 93, ../components/sass/styles.scss */
 .footer-style {
   font-size: 1.2rem;
 }
