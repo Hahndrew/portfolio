@@ -235,8 +235,8 @@ pre, table, fieldset, hr {
   zoom: 1;
 }
 
-/* line 88, ../components/sass/_layout.scss */
-#designProcessPageTitle {
+/* line 91, ../components/sass/_layout.scss */
+.designProcess #designProcessPageTitle {
   clear: both;
   width: 97.91667%;
   float: left;
@@ -246,9 +246,8 @@ pre, table, fieldset, hr {
   margin-top: 10.8rem;
   margin-bottom: 9.6rem;
 }
-
-/* line 94, ../components/sass/_layout.scss */
-figure {
+/* line 98, ../components/sass/_layout.scss */
+.designProcess figure {
   width: 64.58333%;
   float: left;
   margin-left: 1.04167%;
@@ -256,13 +255,12 @@ figure {
   margin-left: 17.70833%;
   margin-bottom: 6.0rem;
 }
-/* line 98, ../components/sass/_layout.scss */
-figure img {
+/* line 101, ../components/sass/_layout.scss */
+.designProcess figure img {
   max-width: 100%;
 }
-
-/* line 101, ../components/sass/_layout.scss */
-p {
+/* line 105, ../components/sass/_layout.scss */
+.designProcess p {
   width: 47.91667%;
   float: left;
   margin-left: 1.04167%;
@@ -271,7 +269,7 @@ p {
   text-align: center;
 }
 
-/* line 108, ../components/sass/_layout.scss */
+/* line 115, ../components/sass/_layout.scss */
 #timeline {
   width: 6.25%;
   float: left;
@@ -280,51 +278,49 @@ p {
   height: 100%;
 }
 
-/* line 113, ../components/sass/_layout.scss */
+/* line 119, ../components/sass/_layout.scss */
 #skillsPageTitle {
   width: 89.58333%;
-  float: right;
+  float: left;
   margin-left: 1.04167%;
   margin-right: 1.04167%;
   margin-top: 6.0rem;
   margin-bottom: 3.6rem;
 }
 
-/* line 118, ../components/sass/_layout.scss */
+/* line 124, ../components/sass/_layout.scss */
 #skills {
   width: 31.25%;
   float: left;
   margin-left: 1.04167%;
   margin-right: 1.04167%;
 }
-/* line 121, ../components/sass/_layout.scss */
+/* line 128, ../components/sass/_layout.scss */
 #skills p {
-  width: 100%;
-  margin-left: 0;
   margin-bottom: 6.0rem;
-  text-align: left;
 }
 
-/* line 127, ../components/sass/_layout.scss */
+/* line 131, ../components/sass/_layout.scss */
 #workSample {
   width: 47.91667%;
   float: left;
   margin-left: 1.04167%;
   margin-right: 1.04167%;
+  margin-left: 30px;
 }
-/* line 130, ../components/sass/_layout.scss */
+/* line 135, ../components/sass/_layout.scss */
 #workSample #slider1, #workSample #slider2, #workSample #slider3, #workSample #slider4, #workSample #slider5, #workSample #slider6 {
   margin-top: 0.6rem;
   height: auto;
   width: auto;
 }
 
-/* line 135, ../components/sass/_layout.scss */
+/* line 140, ../components/sass/_layout.scss */
 .frontendProgramming h1 {
-  padding-top: 2.0rem;
+  padding-top: 0.8rem;
 }
 
-/* line 139, ../components/sass/_layout.scss */
+/* line 146, ../components/sass/_layout.scss */
 #aboutPageTitle {
   clear: both;
   width: 97.91667%;
@@ -336,7 +332,7 @@ p {
   margin-bottom: 9.6rem;
 }
 
-/* line 145, ../components/sass/_layout.scss */
+/* line 152, ../components/sass/_layout.scss */
 #aboutPageContent figure {
   width: 31.25%;
   float: left;
@@ -344,12 +340,12 @@ p {
   margin-right: 1.04167%;
   margin-left: 17.70833%;
 }
-/* line 148, ../components/sass/_layout.scss */
+/* line 155, ../components/sass/_layout.scss */
 #aboutPageContent figure img {
   max-width: 100%;
 }
 
-/* line 152, ../components/sass/_layout.scss */
+/* line 159, ../components/sass/_layout.scss */
 #aboutPageContent section p {
   width: 31.25%;
   float: left;
@@ -358,7 +354,7 @@ p {
   text-align: left;
 }
 
-/* line 158, ../components/sass/_layout.scss */
+/* line 166, ../components/sass/_layout.scss */
 #connectPageTitle {
   clear: both;
   width: 97.91667%;
@@ -370,7 +366,7 @@ p {
   margin-bottom: 9.6rem;
 }
 
-/* line 164, ../components/sass/_layout.scss */
+/* line 172, ../components/sass/_layout.scss */
 #connectPageContent section {
   width: 47.91667%;
   float: left;
@@ -378,7 +374,7 @@ p {
   margin-right: 1.04167%;
   margin-left: 26.04167%;
 }
-/* line 167, ../components/sass/_layout.scss */
+/* line 175, ../components/sass/_layout.scss */
 #connectPageContent section p {
   clear: both;
   width: 97.91667%;
@@ -387,7 +383,7 @@ p {
   margin-right: 1.04167%;
   text-align: left;
 }
-/* line 171, ../components/sass/_layout.scss */
+/* line 179, ../components/sass/_layout.scss */
 #connectPageContent section figure {
   clear: both;
   width: 97.91667%;
@@ -396,7 +392,7 @@ p {
   margin-right: 1.04167%;
 }
 
-/* line 175, ../components/sass/_layout.scss */
+/* line 183, ../components/sass/_layout.scss */
 .google-maps {
   margin-top: 3.6rem;
   position: relative;
@@ -405,7 +401,7 @@ p {
   overflow: hidden;
 }
 
-/* line 182, ../components/sass/_layout.scss */
+/* line 190, ../components/sass/_layout.scss */
 .google-maps iframe {
   position: absolute;
   top: 0;
@@ -413,23 +409,23 @@ p {
   width: 100% !important;
 }
 
-/* line 191, ../components/sass/_layout.scss */
+/* line 199, ../components/sass/_layout.scss */
 .mini-chart {
   max-width: 100%;
   margin-left: 2%;
 }
 
-/* line 195, ../components/sass/_layout.scss */
+/* line 203, ../components/sass/_layout.scss */
 .royalSlider img {
   max-width: 100%;
 }
 
-/* line 199, ../components/sass/_layout.scss */
+/* line 207, ../components/sass/_layout.scss */
 .semantic-markup {
   display: none;
 }
 
-/* line 202, ../components/sass/_layout.scss */
+/* line 210, ../components/sass/_layout.scss */
 .hide-visibility {
   visibility: hidden;
 }
@@ -487,53 +483,43 @@ p {
 /* line 43, ../components/sass/_modules.scss */
 .timeline-container {
   height: 100%;
-  margin-top: 9.0rem;
+  margin-top: 7.5rem;
 }
 
 /* line 47, ../components/sass/_modules.scss */
-.timeline-circle {
-  position: relative;
-  top: 2px;
-  left: -1px;
-  width: 20px;
-  height: 20px;
-  background: black;
-  border: 5px solid rgba(0, 0, 0, 0.8);
-  border-radius: 50%;
-  margin: 0 auto;
-}
-
-/* line 58, ../components/sass/_modules.scss */
-.timeline-line {
-  width: 50%;
-  height: 100%;
-  border-right: 2.8px solid rgba(0, 0, 0, 0.8);
-}
-
-/* line 63, ../components/sass/_modules.scss */
 .timeline-container-type2 {
   height: 100%;
   margin-top: 3.0rem;
 }
 
-/* line 67, ../components/sass/_modules.scss */
-.timeline-circle-type2 {
+/* line 51, ../components/sass/_modules.scss */
+.timeline-circle, .timeline-circle-type2 {
   position: relative;
-  top: 60px;
+  top: 8px;
   left: -1px;
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
   background: black;
   border: 5px solid rgba(0, 0, 0, 0.8);
   border-radius: 50%;
   margin: 0 auto;
 }
 
-/* line 78, ../components/sass/_modules.scss */
-.timeline-line-type3 {
+/* line 62, ../components/sass/_modules.scss */
+.timeline-circle-type2 {
+  top: 55px;
+}
+
+/* line 66, ../components/sass/_modules.scss */
+.timeline-line, .timeline-line-type2 {
   width: 50%;
-  height: 6%;
+  height: 100%;
   border-right: 2.8px solid rgba(0, 0, 0, 0.8);
+}
+
+/* line 71, ../components/sass/_modules.scss */
+.timeline-line-type2 {
+  height: 6%;
 }
 
 /* line 16, ../components/sass/styles.scss */
