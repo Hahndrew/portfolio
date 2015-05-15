@@ -1,5 +1,5 @@
 // Slider Init & Options ----------------------------------------
-jQuery(document).ready(function($) {
+$(document).ready(function($) {
 	$('#slider1, #slider2, #slider3, #slider4, #slider5, #slider6').royalSlider({
 		// options
 		imageScaleMode: 'fit',
@@ -18,6 +18,7 @@ jQuery(document).ready(function($) {
 
 // fullPage Init & Options ---------------------------------------
 $(document).ready(function() {
+	// Options
     $('#fullpage').fullpage({
     	// Layout
     	verticalCentered: false,
@@ -30,13 +31,21 @@ $(document).ready(function() {
 
     	// Scrolling
     	loopHorizontal: false,
+    	//autoScrolling: false,
 
     	// Design
     	controlArrows: false
 
-
     });
-});
 
-// fullPage Methods ------------------------------------
-// $.fn.fullpage.setAutoScrolling(true);
+    /*
+    // Layout
+    var screenWidth = $(window).width();
+
+    if (screenWidth < 887) {
+    	$.fn.fullpage.setAutoScrolling(false);
+    	alert("screenWidth is now medium");
+    }
+    */
+
+});
