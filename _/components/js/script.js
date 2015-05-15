@@ -18,6 +18,18 @@ $(document).ready(function($) {
 
 // fullPage Init & Options ---------------------------------------
 $(document).ready(function() {
+
+    /*
+    function autoScrollOff() {
+        var screenWidth = $(window).width();
+        if (screenWidth < 887) {
+            $.fn.fullpage.setAutoScrolling(false);
+        } else {
+            $.fn.fullpage.setAutoScrolling(true);
+        }
+    }
+    */
+
 	// Options
     $('#fullpage').fullpage({
     	// Layout
@@ -38,14 +50,7 @@ $(document).ready(function() {
 
     });
 
-    /*
-    // Layout
-    var screenWidth = $(window).width();
+    //autoScrollOff();
 
-    if (screenWidth < 887) {
-    	$.fn.fullpage.setAutoScrolling(false);
-    	alert("screenWidth is now medium");
-    }
-    */
 
 });

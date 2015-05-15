@@ -41,6 +41,7 @@
 
 // Timeline ----------------------------------------
 .timeline-container {
+	// LARGE LAYOUT ************
 	height: 100%;
 	margin-top: 7.5rem;
 }
@@ -51,7 +52,7 @@
 .timeline-circle {
 	position: relative;
 	top: 8px;
-	left: -1px;
+	left: -1.5px;
 	width: 23px;
 	height: 23px;
 	background: black;
@@ -61,7 +62,7 @@
 }
 .timeline-circle-type2 {
 	@extend .timeline-circle;
-	top: 55px;
+	top: 54px;
 }
 .timeline-line {
 	width: 50%;

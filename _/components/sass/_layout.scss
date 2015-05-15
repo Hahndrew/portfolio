@@ -93,43 +93,31 @@ pre,table,fieldset,hr{
 		@include full;
 		text-align: center;
 		margin-top: 10.8rem;
-		margin-bottom: 9.6rem;
+		margin-bottom: 16.8rem;
+
+		// MEDIUM LAYOUT ************
+		@include breakpoint($medium) {
+			margin-top: 12.0rem;
+		}
 
 		// SMALL LAYOUT *************
-		@include breakpoint($small){
-			font-size: 3.6rem;
-			margin-bottom: 6.0rem;
+		@include breakpoint($small) {
+			margin-bottom: 10.8rem;
 		}
+
+		// XSMALL LAYOUT ************
+		@include breakpoint($xsmall) {
+			font-size: 2.8rem;
+		}
+
 	}//#designProcessPageTitle
 
 	figure {
-		// ALL LAYOUT *************
+		// LARGE LAYOUT *************
 		@include span(10);
 		@include push(1);
-		img {max-width: 100%;}
-		margin-bottom: 4.8rem;
+		img { max-width: 100%;}
 	}//figure
-
-	p {
-		// LARGE LAYOUT *************
-		@include span(6);
-		@include push(3);
-		text-align: center;
-
-		// MEDIUM LAYOUT ************
-		@include breakpoint($medium){
-			@include span(8);
-			@include push(2);
-		}
-		// SMALL LAYOUT *************
-		@include breakpoint($small){
-			font-size: 1.4rem;
-		}
-		// XSMALL LAYOUT ************
-		@include breakpoint($xsmall){
-			display: none;
-		}
-	}//p
 
 }
 
@@ -140,66 +128,58 @@ pre,table,fieldset,hr{
 	height: 100%;
 
 	// Hide in Medium and Small Layout
-	@include breakpoint($medium){
+	@include breakpoint($medium) {
 		display: none;
 	}
-}
 
+}
 #skillsPageTitle {
 	// LARGE LAYOUT *************
 	@include span(11);
 	margin-top: 6.0rem;
-	margin-bottom: 4.8rem;
+	margin-bottom: 7.2rem;
 
 	// MEDIUM LAYOUT ************
-	@include breakpoint($medium){
+	@include breakpoint($medium) {
 		@include full;
 		font-size: 4.0rem;
-		margin-top: 7.2rem;
 		text-align: center;
-		//margin-left: 2.4rem;
+		margin-top: 10.8rem;
+		margin-bottom: 4.8rem;
 	}
 
 	// SMALL LAYOUT *************
-	@include breakpoint($small){
-		img {display: none;}
-		margin-top: 9.6rem; 
+	@include breakpoint($small) {
+		img { display: none;}
+		margin-top: 9.6rem;
 	}
 
 }
 #skills {
 	// LARGE LAYOUT *************
 	@include span(4);
-	p {margin-bottom: 6.0rem;}
+	p { margin-bottom: 6.0rem; }
 
 	// MEDIUM LAYOUT ************
-	@include breakpoint($medium){
+	@include breakpoint($medium) {
 		@include full;
 
 		p {
-			@include span(5);
-			@include push(1);
-			//margin-left: 1.8rem;
-			margin-bottom: 3.6rem;}
+			@include span(8);
+			@include push(2);
+			margin-bottom: 3.6rem; }
 
 		.skills-list {
-			@include span(5);
-			margin-left: 30px;
-			padding-left: 50px;
-			// TEMP - Style it in style.scss
-			border-left: 1px solid black;
-			h3 {
-				font-size: 1.8rem;
-				line-height: 2.4rem;
-				margin-bottom: 1.2rem;} }
+			display: none; }
+
 	}
 
 	// SMALL LAYOUT *************
-	@include breakpoint($small){
-		.skills-list {display: none;}
+	@include breakpoint($small) {
+		.skills-list { display: none; }
 		p {
 			@include span(8);
-			@include push(2);}
+			@include push(2); }
 	}
 
 }
@@ -211,7 +191,7 @@ pre,table,fieldset,hr{
 	#slider1, #slider2, #slider3, #slider4, #slider5, #slider6 {
 		margin-top: 0.6rem;
 		height: auto;
-		width: auto;}
+		width: auto; }
 
 	// !!!!!!!!!!!!! setAutoScrolling(true) !!!!!!!!!!!!!!!!!
 
@@ -230,41 +210,114 @@ pre,table,fieldset,hr{
 
 // About Page -------------------------------------
 #aboutPageTitle {
+	// LARGE LAYOUT ************
 	@include full;
 	text-align: center;
 	margin-top: 10.8rem;
 	margin-bottom: 9.6rem;
+
+	// MEDIUM LAYOUT ************
+	@include breakpoint($medium) {
+		margin-top: 12.0rem;
+		margin-bottom: 6.0rem;
+	}
+
+	// XSMALL LAYOUT ************
+	@include breakpoint($xsmall) {
+		font-size: 2.8rem;
+		margin-bottom: 3.6rem;
+	}
+
 }
 #aboutPageContent figure {
-	@include span(4);
-	@include push(2);
-	img {
-		max-width: 100%;
+	// LARGE LAYOUT ************
+	@include span(5);
+	@include push(1);
+	img { max-width: 100%; }
+
+	// MEDIUM LAYOUT ************
+	@include breakpoint($medium) {
+		@include span(8);
+		@include push(2);
 	}
+
+	// XSMALL LAYOUT ************
+	@include breakpoint($xsmall) {
+		@include span(10);
+		@include push(1);
+	}
+
 }
-#aboutPageContent section p {
-	@include span(4);
+#aboutPageContent section {
+	// LARGE LAYOUT ************
+	@include span(5);
 	text-align: left;
+
+	// MEDIUM LAYOUT ************
+	@include breakpoint($medium) {
+		@include span(8);
+		@include push(2);
+	}
+
+	p {
+		// SMALL LAYOUT *************
+		@include breakpoint($small) {
+			font-size: 1.4rem; }
+	}
+
+	// XSMALL LAYOUT ************
+	@include breakpoint($xsmall) {
+		@include span(10);
+		@include push(1);
+	}
+
 }
 
 
 // Connect Page -----------------------------------
 #connectPageTitle {
+	// LARGE LAYOUT ************
 	@include full;
 	text-align: center;
 	margin-top: 10.8rem;
 	margin-bottom: 9.6rem;
+
+	// MEDIUM LAYOUT ************
+	@include breakpoint($medium) {
+		margin-top: 12.0rem;
+		margin-bottom: 6.0rem;
+	}
+
+	// XSMALL LAYOUT ************
+	@include breakpoint($xsmall) {
+		font-size: 2.8rem;
+		margin-bottom: 3.6rem;
+	}
+
 }
 #connectPageContent section {
+	// LARGE LAYOUT ************
 	@include span(6);
 	@include push(3);
+
+	// MEDIUM LAYOUT ************
+	@include breakpoint($medium) {
+		@include span(8);
+		@include push(2);
+	}
+
 	p {
-		@include full;
-		text-align: left;
+		// SMALL LAYOUT *************
+		@include breakpoint($small) {
+			font-size: 1.4rem; }
 	}
-	figure {
-		@include full;
+
+	// XSMALL LAYOUT ************
+	@include breakpoint($xsmall) {
+		@include span(10);
+		@include push(1);
 	}
+
 }
 .google-maps {
 	margin-top: 3.6rem;
@@ -284,15 +337,18 @@ pre,table,fieldset,hr{
 // Responsive Images -------------------------------
 .mini-chart {
 	max-width: 100%;
-	margin-left: 2%;}
-
+	margin-left: 2%;
+}
 .royalSlider img {
-	max-width: 100%;}
+	max-width: 100%;
+}
+
 
 // Hide ------------------------------------------
 .semantic-markup {
-	display: none;}
-
+	display: none;
+}
 .hide-visibility {
-	visibility: hidden;}
+	visibility: hidden;
+}
 
