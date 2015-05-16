@@ -44,8 +44,14 @@
 	// LARGE LAYOUT ************
 	height: 100%;
 	margin-top: 7.5rem;
+
+	// MEDIUM LAYOUT ************
+	@include breakpoint($medium) {
+		margin-top: 10.2rem;
+	}
 }
 .timeline-container-type2 {
+	// LARGE LAYOUT ************
 	height: 100%;
 	margin-top: 3.0rem;
 }
@@ -61,8 +67,14 @@
 	margin: 0 auto;
 }
 .timeline-circle-type2 {
+	// LARGE LAYOUT ************
 	@extend .timeline-circle;
 	top: 54px;
+
+	// MEDIUM LAYOUT ************
+	@include breakpoint($medium) {
+		top: 80px;
+	}
 }
 .timeline-line {
 	width: 50%;
@@ -70,6 +82,12 @@
 	border-right: 2.8px solid $paleblack-display;
 }
 .timeline-line-type2 {
+	// LARGE LAYOUT ************
 	@extend .timeline-line;
 	height: 6%;
+
+	// MEDIUM LAYOUT ************
+	@include breakpoint($medium) {
+		height: 8%;
+	}
 }

@@ -126,12 +126,6 @@ pre,table,fieldset,hr{
 #timeline {
 	@include span(1);
 	height: 100%;
-
-	// Hide in Medium and Small Layout
-	@include breakpoint($medium) {
-		display: none;
-	}
-
 }
 #skillsPageTitle {
 	// LARGE LAYOUT *************
@@ -141,19 +135,30 @@ pre,table,fieldset,hr{
 
 	// MEDIUM LAYOUT ************
 	@include breakpoint($medium) {
-		@include full;
+		@include span(11);
 		font-size: 4.0rem;
-		text-align: center;
-		margin-top: 10.8rem;
-		margin-bottom: 4.8rem;
+		margin-top: 8.4rem;
+		margin-bottom: 3.6rem;
 	}
 
 	// SMALL LAYOUT *************
 	@include breakpoint($small) {
-		img { display: none;}
+		img { display: none; }
 		margin-top: 9.6rem;
+
 	}
 
+	// XSMALL LAYOUT ************
+	@include breakpoint($xsmall) {
+		font-size: 3.6rem;
+	}
+
+}
+.frontendProgramming #skillsPageTitle {
+	// SMALL LAYOUT *************
+	@include breakpoint($small) {
+		margin-top: 8.4rem;
+	}
 }
 #skills {
 	// LARGE LAYOUT *************
@@ -162,24 +167,9 @@ pre,table,fieldset,hr{
 
 	// MEDIUM LAYOUT ************
 	@include breakpoint($medium) {
-		@include full;
-
-		p {
-			@include span(8);
-			@include push(2);
-			margin-bottom: 3.6rem; }
-
-		.skills-list {
-			display: none; }
-
-	}
-
-	// SMALL LAYOUT *************
-	@include breakpoint($small) {
+		@include span(10);
+		p { margin-bottom: 3.6rem; }
 		.skills-list { display: none; }
-		p {
-			@include span(8);
-			@include push(2); }
 	}
 
 }
@@ -197,10 +187,8 @@ pre,table,fieldset,hr{
 
 	// MEDIUM LAYOUT ************
 	@include breakpoint($medium){
-		@include span(8);
-		@include push(2);
+		@include span(10);
 	}
-
 
 }
 .frontendProgramming h1 {
@@ -333,6 +321,7 @@ pre,table,fieldset,hr{
     width: 100% !important;
     //height: 100% !important;
 }
+
 
 // Responsive Images -------------------------------
 .mini-chart {
