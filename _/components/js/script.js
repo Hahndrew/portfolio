@@ -6,12 +6,12 @@ $(document).ready(function($) {
 		imageScalePadding: 0,
 		controlNavigation: 'none',
 		autoScaleSlider: true,
-		autoScaleSliderWidth: 1.5,
-		autoScaleSliderHeight: 1,
+		autoScaleSliderWidth: 960,
+		autoScaleSliderHeight: 540,
 		arrowsNavAutoHide: false,
 		arrowsNavHideOnTouch: true,
 		transitionSpeed: 350,
-		globalCaption: true
+		globalCaption: false
 	}); //royalSlider
 });//ready()
 

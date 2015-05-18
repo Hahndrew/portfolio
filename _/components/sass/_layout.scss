@@ -93,7 +93,7 @@ pre,table,fieldset,hr{
 		@include full;
 		text-align: center;
 		margin-top: 10.8rem;
-		margin-bottom: 16.8rem;
+		margin-bottom: 13.2rem;
 
 		// MEDIUM LAYOUT ************
 		@include breakpoint($medium) {
@@ -126,6 +126,11 @@ pre,table,fieldset,hr{
 #timeline {
 	@include span(1);
 	height: 100%;
+
+	// XSMALL LAYOUT ************
+	@include breakpoint($xsmall) {
+		display: none;
+	}
 }
 #skillsPageTitle {
 	// LARGE LAYOUT *************
@@ -151,6 +156,7 @@ pre,table,fieldset,hr{
 	// XSMALL LAYOUT ************
 	@include breakpoint($xsmall) {
 		font-size: 3.6rem;
+		margin-left: 1.2rem;
 	}
 
 }
@@ -163,13 +169,19 @@ pre,table,fieldset,hr{
 #skills {
 	// LARGE LAYOUT *************
 	@include span(4);
-	p { margin-bottom: 6.0rem; }
+	p { margin-bottom: 6.0rem;
+		margin-bottom: 2.4rem; }
 
 	// MEDIUM LAYOUT ************
 	@include breakpoint($medium) {
 		@include span(10);
 		p { margin-bottom: 3.6rem; }
 		.skills-list { display: none; }
+	}
+
+	// XSMALL LAYOUT ************
+	@include breakpoint($xsmall) {
+		margin-left: 1.2rem;
 	}
 
 }
@@ -188,6 +200,11 @@ pre,table,fieldset,hr{
 	// MEDIUM LAYOUT ************
 	@include breakpoint($medium){
 		@include span(10);
+	}
+
+	// XSMALL LAYOUT ************
+	@include breakpoint($xsmall) {
+		margin-left: 1.2rem;
 	}
 
 }
