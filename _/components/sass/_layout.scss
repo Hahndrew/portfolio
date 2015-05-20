@@ -295,20 +295,20 @@ pre,table,fieldset,hr{
 }
 #aboutPageContent figure {
 	// LARGE LAYOUT ************
-	@include span(5);
-	@include push(1);
+	@include span(3);
+	@include push(2);
 	img { max-width: 100%; }
 
 	// MEDIUM LAYOUT ************
 	@include breakpoint($medium) {
-		@include span(8);
-		@include push(2);
+		@include span(4);
+		@include push(4);
 	}
 
 	// XSMALL LAYOUT ************
 	@include breakpoint($xsmall) {
-		@include span(10);
-		@include push(1);
+		@include span(6);
+		@include push(3);
 	}
 
 }
@@ -316,6 +316,9 @@ pre,table,fieldset,hr{
 	// LARGE LAYOUT ************
 	@include span(5);
 	text-align: left;
+	p:last-child {
+		margin-bottom: 8.4rem;
+	}
 
 	// MEDIUM LAYOUT ************
 	@include breakpoint($medium) {
@@ -363,6 +366,9 @@ pre,table,fieldset,hr{
 	// LARGE LAYOUT ************
 	@include span(6);
 	@include push(3);
+	figure {
+		margin-bottom: 8.4rem;
+	}
 
 	// MEDIUM LAYOUT ************
 	@include breakpoint($medium) {
@@ -415,5 +421,8 @@ pre,table,fieldset,hr{
 }
 .hide-visibility {
 	visibility: hidden;
+}
+.hide {
+	display: none;
 }
 
