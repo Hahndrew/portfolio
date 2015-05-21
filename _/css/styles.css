@@ -129,7 +129,7 @@ h4 {
   box-sizing: border-box;
 }
 
-/* line 12, ../components/sass/_layout.scss */
+/* line 16, ../components/sass/_layout.scss */
 body {
   max-width: 100%;
   margin-left: auto;
@@ -142,7 +142,7 @@ body:after {
   clear: both;
 }
 
-/* line 15, ../components/sass/_layout.scss */
+/* line 19, ../components/sass/_layout.scss */
 h1, h2, h3, h4, h5, h6, hgroup,
 ul, ol, dd,
 p, figure,
@@ -150,37 +150,55 @@ pre, table, fieldset, hr {
   margin-bottom: 2.4rem;
 }
 
-/* line 21, ../components/sass/_layout.scss */
+/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack*/
+/* For modern browsers */
+/* line 27, ../components/sass/_layout.scss */
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+/* line 31, ../components/sass/_layout.scss */
+.cf:after {
+  clear: both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+/* line 35, ../components/sass/_layout.scss */
+.cf {
+  zoom: 1;
+}
+
+/* line 43, ../components/sass/_layout.scss */
 #pageHeader {
   position: fixed;
   width: 100%;
-  height: 3.6rem;
   z-index: 100;
   padding: 1.2rem;
 }
-/* line 28, ../components/sass/_layout.scss */
+/* line 50, ../components/sass/_layout.scss */
 #pageHeader #logo {
   float: left;
 }
-/* line 30, ../components/sass/_layout.scss */
+/* line 52, ../components/sass/_layout.scss */
 #pageHeader #mainNav {
   float: right;
 }
-/* line 33, ../components/sass/_layout.scss */
+/* line 55, ../components/sass/_layout.scss */
 #pageHeader #mainNav .topmenu {
   margin-bottom: 0;
 }
-/* line 36, ../components/sass/_layout.scss */
+/* line 58, ../components/sass/_layout.scss */
 #pageHeader #mainNav .topmenu li {
   float: left;
   position: relative;
 }
-/* line 39, ../components/sass/_layout.scss */
+/* line 61, ../components/sass/_layout.scss */
 #pageHeader #mainNav .topmenu li a {
   display: block;
   padding: 0 2.4rem 1.2rem 2.4rem;
 }
-/* line 42, ../components/sass/_layout.scss */
+/* line 64, ../components/sass/_layout.scss */
 #pageHeader #mainNav .topmenu .submenu {
   float: none;
   width: auto;
@@ -190,68 +208,68 @@ pre, table, fieldset, hr {
   top: 3.8rem;
   left: -9000rem;
 }
-/* line 50, ../components/sass/_layout.scss */
+/* line 72, ../components/sass/_layout.scss */
 #pageHeader #mainNav .topmenu .submenu li {
   float: none;
-}
-/* line 52, ../components/sass/_layout.scss */
-#pageHeader #mainNav .topmenu .submenu li a {
-  padding-top: 1.2rem;
-  border-bottom: 1px solid gray;
   white-space: nowrap;
 }
-/* line 55, ../components/sass/_layout.scss */
+/* line 74, ../components/sass/_layout.scss */
+#pageHeader #mainNav .topmenu .submenu li a {
+  padding-top: 1.2rem;
+  border-bottom: 1px solid #808080;
+}
+/* line 76, ../components/sass/_layout.scss */
 #pageHeader #mainNav .topmenu .submenu li:last-child a {
   border-bottom: none;
 }
 @media (max-width: 550px) {
-  /* line 30, ../components/sass/_layout.scss */
+  /* line 52, ../components/sass/_layout.scss */
   #pageHeader #mainNav {
     display: none;
   }
 }
-/* line 68, ../components/sass/_layout.scss */
+/* line 101, ../components/sass/_layout.scss */
 #pageHeader #mainNav-mobile {
   float: right;
   display: none;
 }
 @media (max-width: 550px) {
-  /* line 68, ../components/sass/_layout.scss */
+  /* line 101, ../components/sass/_layout.scss */
   #pageHeader #mainNav-mobile {
     display: block;
   }
-  /* line 76, ../components/sass/_layout.scss */
+  /* line 109, ../components/sass/_layout.scss */
   #pageHeader #mainNav-mobile .click-nav {
     margin: 100px auto;
     width: 200px;
   }
-  /* line 79, ../components/sass/_layout.scss */
+  /* line 112, ../components/sass/_layout.scss */
   #pageHeader #mainNav-mobile .click-nav ul {
     position: relative;
   }
-  /* line 81, ../components/sass/_layout.scss */
+  /* line 114, ../components/sass/_layout.scss */
   #pageHeader #mainNav-mobile .click-nav ul li {
     position: relative;
     cursor: pointer;
   }
-  /* line 84, ../components/sass/_layout.scss */
+  /* line 117, ../components/sass/_layout.scss */
   #pageHeader #mainNav-mobile .click-nav ul li ul {
     position: absolute;
     left: 0;
     right: 0;
   }
-  /* line 91, ../components/sass/_layout.scss */
+  /* line 124, ../components/sass/_layout.scss */
   #pageHeader #mainNav-mobile .click-nav ul .clicker {
     position: relative;
     backgroudn: #2284B5;
     color: #FFF;
   }
-  /* line 96, ../components/sass/_layout.scss */
+  /* line 129, ../components/sass/_layout.scss */
   #pageHeader #mainNav-mobile .click-nav ul .clicker:hover,
   #pageHeader #mainNav-mobile .click-nav ul .active {
     background: #196F9A;
   }
-  /* line 100, ../components/sass/_layout.scss */
+  /* line 133, ../components/sass/_layout.scss */
   #pageHeader #mainNav-mobile .click-nav ul li a {
     transition: background-color 0.2s ease-in-out;
     -webkit-transition: background-color 0.2s ease-in-out;
@@ -261,21 +279,21 @@ pre, table, fieldset, hr {
     background: #FFF;
     color: #333;
   }
-  /* line 109, ../components/sass/_layout.scss */
+  /* line 142, ../components/sass/_layout.scss */
   #pageHeader #mainNav-mobile .click-nav ul li a:hover {
     background: #F2F2F2;
   }
-  /* line 114, ../components/sass/_layout.scss */
+  /* line 147, ../components/sass/_layout.scss */
   #pageHeader #mainNav-mobile .click-nav .no-js ul {
     display: none;
   }
-  /* line 115, ../components/sass/_layout.scss */
+  /* line 148, ../components/sass/_layout.scss */
   #pageHeader #mainNav-mobile .click-nav .no-js:hover ul {
     display: block;
   }
 }
 
-/* line 122, ../components/sass/_layout.scss */
+/* line 159, ../components/sass/_layout.scss */
 #footer {
   position: fixed;
   bottom: 0px;
@@ -286,26 +304,7 @@ pre, table, fieldset, hr {
   z-index: 100;
 }
 
-/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack*/
-/* For modern browsers */
-/* line 134, ../components/sass/_layout.scss */
-.cf:before, .cf:after {
-  content: "";
-  display: table;
-}
-
-/* line 138, ../components/sass/_layout.scss */
-.cf:after {
-  clear: both;
-}
-
-/* For IE 6/7 (trigger hasLayout) */
-/* line 142, ../components/sass/_layout.scss */
-.cf {
-  zoom: 1;
-}
-
-/* line 150, ../components/sass/_layout.scss */
+/* line 175, ../components/sass/_layout.scss */
 .designProcess #designProcessPageTitle {
   clear: both;
   width: 97.91667%;
@@ -317,24 +316,24 @@ pre, table, fieldset, hr {
   margin-bottom: 13.2rem;
 }
 @media (max-width: 886px) {
-  /* line 150, ../components/sass/_layout.scss */
+  /* line 175, ../components/sass/_layout.scss */
   .designProcess #designProcessPageTitle {
     margin-top: 12.0rem;
   }
 }
 @media (max-width: 777px) {
-  /* line 150, ../components/sass/_layout.scss */
+  /* line 175, ../components/sass/_layout.scss */
   .designProcess #designProcessPageTitle {
     margin-bottom: 10.8rem;
   }
 }
 @media (max-width: 550px) {
-  /* line 150, ../components/sass/_layout.scss */
+  /* line 175, ../components/sass/_layout.scss */
   .designProcess #designProcessPageTitle {
     font-size: 2.8rem;
   }
 }
-/* line 174, ../components/sass/_layout.scss */
+/* line 199, ../components/sass/_layout.scss */
 .designProcess figure {
   width: 81.25%;
   float: left;
@@ -342,12 +341,12 @@ pre, table, fieldset, hr {
   margin-right: 1.04167%;
   margin-left: 9.375%;
 }
-/* line 178, ../components/sass/_layout.scss */
+/* line 203, ../components/sass/_layout.scss */
 .designProcess figure img {
   max-width: 100%;
 }
 
-/* line 185, ../components/sass/_layout.scss */
+/* line 212, ../components/sass/_layout.scss */
 #timeline {
   width: 6.25%;
   float: left;
@@ -356,13 +355,13 @@ pre, table, fieldset, hr {
   height: 100%;
 }
 @media (max-width: 550px) {
-  /* line 185, ../components/sass/_layout.scss */
+  /* line 212, ../components/sass/_layout.scss */
   #timeline {
     display: none;
   }
 }
 
-/* line 194, ../components/sass/_layout.scss */
+/* line 221, ../components/sass/_layout.scss */
 #skillsPageTitle {
   width: 89.58333%;
   float: left;
@@ -372,7 +371,7 @@ pre, table, fieldset, hr {
   margin-bottom: 7.2rem;
 }
 @media (max-width: 886px) {
-  /* line 194, ../components/sass/_layout.scss */
+  /* line 221, ../components/sass/_layout.scss */
   #skillsPageTitle {
     width: 89.58333%;
     float: left;
@@ -384,67 +383,75 @@ pre, table, fieldset, hr {
   }
 }
 @media (max-width: 777px) {
-  /* line 194, ../components/sass/_layout.scss */
+  /* line 221, ../components/sass/_layout.scss */
   #skillsPageTitle {
     margin-top: 9.6rem;
   }
-  /* line 210, ../components/sass/_layout.scss */
+  /* line 237, ../components/sass/_layout.scss */
   #skillsPageTitle img {
     display: none;
   }
 }
 @media (max-width: 550px) {
-  /* line 194, ../components/sass/_layout.scss */
+  /* line 221, ../components/sass/_layout.scss */
   #skillsPageTitle {
-    font-size: 3.6rem;
+    font-size: 2.8rem;
+    line-height: 4.2rem;
+    margin-bottom: 1.2rem;
     margin-left: 1.2rem;
   }
 }
 
 @media (max-width: 777px) {
-  /* line 222, ../components/sass/_layout.scss */
+  /* line 251, ../components/sass/_layout.scss */
   .frontendProgramming #skillsPageTitle {
     margin-top: 8.4rem;
   }
 }
 
-/* line 228, ../components/sass/_layout.scss */
+/* line 257, ../components/sass/_layout.scss */
 #skills {
   width: 31.25%;
   float: left;
   margin-left: 1.04167%;
   margin-right: 1.04167%;
 }
-/* line 231, ../components/sass/_layout.scss */
+/* line 260, ../components/sass/_layout.scss */
 #skills p {
   margin-bottom: 6.0rem;
   margin-bottom: 2.4rem;
 }
 @media (max-width: 886px) {
-  /* line 228, ../components/sass/_layout.scss */
+  /* line 257, ../components/sass/_layout.scss */
   #skills {
     width: 81.25%;
     float: left;
     margin-left: 1.04167%;
     margin-right: 1.04167%;
   }
-  /* line 237, ../components/sass/_layout.scss */
+  /* line 266, ../components/sass/_layout.scss */
   #skills p {
     margin-bottom: 3.6rem;
   }
-  /* line 238, ../components/sass/_layout.scss */
+  /* line 267, ../components/sass/_layout.scss */
   #skills .skills-list {
     display: none;
   }
 }
 @media (max-width: 550px) {
-  /* line 228, ../components/sass/_layout.scss */
+  /* line 257, ../components/sass/_layout.scss */
   #skills {
     margin-left: 1.2rem;
   }
+  /* line 273, ../components/sass/_layout.scss */
+  #skills p {
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
 }
 
-/* line 247, ../components/sass/_layout.scss */
+/* line 280, ../components/sass/_layout.scss */
 #workSample {
   width: 47.91667%;
   float: left;
@@ -452,14 +459,14 @@ pre, table, fieldset, hr {
   margin-right: 1.04167%;
   margin-left: 30px;
 }
-/* line 252, ../components/sass/_layout.scss */
+/* line 285, ../components/sass/_layout.scss */
 #workSample #slider1, #workSample #slider2, #workSample #slider3, #workSample #slider4, #workSample #slider5, #workSample #slider6 {
   margin-top: 0.6rem;
   height: auto;
   width: auto;
 }
 @media (max-width: 886px) {
-  /* line 247, ../components/sass/_layout.scss */
+  /* line 280, ../components/sass/_layout.scss */
   #workSample {
     width: 81.25%;
     float: left;
@@ -468,18 +475,18 @@ pre, table, fieldset, hr {
   }
 }
 @media (max-width: 550px) {
-  /* line 247, ../components/sass/_layout.scss */
+  /* line 280, ../components/sass/_layout.scss */
   #workSample {
     margin-left: 1.2rem;
   }
 }
 
-/* line 270, ../components/sass/_layout.scss */
+/* line 301, ../components/sass/_layout.scss */
 .frontendProgramming h1 {
   padding-top: 0.8rem;
 }
 
-/* line 276, ../components/sass/_layout.scss */
+/* line 309, ../components/sass/_layout.scss */
 #aboutPageTitle {
   clear: both;
   width: 97.91667%;
@@ -491,21 +498,22 @@ pre, table, fieldset, hr {
   margin-bottom: 9.6rem;
 }
 @media (max-width: 886px) {
-  /* line 276, ../components/sass/_layout.scss */
+  /* line 309, ../components/sass/_layout.scss */
   #aboutPageTitle {
     margin-top: 12.0rem;
     margin-bottom: 6.0rem;
   }
 }
 @media (max-width: 550px) {
-  /* line 276, ../components/sass/_layout.scss */
+  /* line 309, ../components/sass/_layout.scss */
   #aboutPageTitle {
     font-size: 2.8rem;
-    margin-bottom: 3.6rem;
+    line-height: 4.2rem;
+    margin-bottom: 2.4rem;
   }
 }
 
-/* line 296, ../components/sass/_layout.scss */
+/* line 330, ../components/sass/_layout.scss */
 #aboutPageContent figure {
   width: 22.91667%;
   float: left;
@@ -513,12 +521,12 @@ pre, table, fieldset, hr {
   margin-right: 1.04167%;
   margin-left: 17.70833%;
 }
-/* line 300, ../components/sass/_layout.scss */
+/* line 334, ../components/sass/_layout.scss */
 #aboutPageContent figure img {
   max-width: 100%;
 }
 @media (max-width: 886px) {
-  /* line 296, ../components/sass/_layout.scss */
+  /* line 330, ../components/sass/_layout.scss */
   #aboutPageContent figure {
     width: 31.25%;
     float: left;
@@ -528,7 +536,7 @@ pre, table, fieldset, hr {
   }
 }
 @media (max-width: 550px) {
-  /* line 296, ../components/sass/_layout.scss */
+  /* line 330, ../components/sass/_layout.scss */
   #aboutPageContent figure {
     width: 47.91667%;
     float: left;
@@ -538,20 +546,22 @@ pre, table, fieldset, hr {
   }
 }
 
-/* line 315, ../components/sass/_layout.scss */
+/* line 349, ../components/sass/_layout.scss */
 #aboutPageContent section {
+  position: relative;
+  top: -5px;
   width: 39.58333%;
   float: left;
   margin-left: 1.04167%;
   margin-right: 1.04167%;
   text-align: left;
 }
-/* line 319, ../components/sass/_layout.scss */
+/* line 357, ../components/sass/_layout.scss */
 #aboutPageContent section p:last-child {
   margin-bottom: 8.4rem;
 }
 @media (max-width: 886px) {
-  /* line 315, ../components/sass/_layout.scss */
+  /* line 349, ../components/sass/_layout.scss */
   #aboutPageContent section {
     width: 64.58333%;
     float: left;
@@ -560,14 +570,8 @@ pre, table, fieldset, hr {
     margin-left: 17.70833%;
   }
 }
-@media (max-width: 777px) {
-  /* line 329, ../components/sass/_layout.scss */
-  #aboutPageContent section p {
-    font-size: 1.4rem;
-  }
-}
 @media (max-width: 550px) {
-  /* line 315, ../components/sass/_layout.scss */
+  /* line 349, ../components/sass/_layout.scss */
   #aboutPageContent section {
     width: 81.25%;
     float: left;
@@ -575,9 +579,15 @@ pre, table, fieldset, hr {
     margin-right: 1.04167%;
     margin-left: 9.375%;
   }
+  /* line 371, ../components/sass/_layout.scss */
+  #aboutPageContent section p {
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
 }
 
-/* line 345, ../components/sass/_layout.scss */
+/* line 383, ../components/sass/_layout.scss */
 #connectPageTitle {
   clear: both;
   width: 97.91667%;
@@ -589,21 +599,22 @@ pre, table, fieldset, hr {
   margin-bottom: 9.6rem;
 }
 @media (max-width: 886px) {
-  /* line 345, ../components/sass/_layout.scss */
+  /* line 383, ../components/sass/_layout.scss */
   #connectPageTitle {
     margin-top: 12.0rem;
     margin-bottom: 6.0rem;
   }
 }
 @media (max-width: 550px) {
-  /* line 345, ../components/sass/_layout.scss */
+  /* line 383, ../components/sass/_layout.scss */
   #connectPageTitle {
     font-size: 2.8rem;
-    margin-bottom: 3.6rem;
+    line-height: 4.2rem;
+    margin-bottom: 2.4rem;
   }
 }
 
-/* line 365, ../components/sass/_layout.scss */
+/* line 404, ../components/sass/_layout.scss */
 #connectPageContent section {
   width: 47.91667%;
   float: left;
@@ -611,12 +622,12 @@ pre, table, fieldset, hr {
   margin-right: 1.04167%;
   margin-left: 26.04167%;
 }
-/* line 369, ../components/sass/_layout.scss */
+/* line 408, ../components/sass/_layout.scss */
 #connectPageContent section figure {
   margin-bottom: 8.4rem;
 }
 @media (max-width: 886px) {
-  /* line 365, ../components/sass/_layout.scss */
+  /* line 404, ../components/sass/_layout.scss */
   #connectPageContent section {
     width: 64.58333%;
     float: left;
@@ -625,14 +636,8 @@ pre, table, fieldset, hr {
     margin-left: 17.70833%;
   }
 }
-@media (max-width: 777px) {
-  /* line 379, ../components/sass/_layout.scss */
-  #connectPageContent section p {
-    font-size: 1.4rem;
-  }
-}
 @media (max-width: 550px) {
-  /* line 365, ../components/sass/_layout.scss */
+  /* line 404, ../components/sass/_layout.scss */
   #connectPageContent section {
     width: 81.25%;
     float: left;
@@ -640,9 +645,15 @@ pre, table, fieldset, hr {
     margin-right: 1.04167%;
     margin-left: 9.375%;
   }
+  /* line 422, ../components/sass/_layout.scss */
+  #connectPageContent section p {
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
 }
 
-/* line 392, ../components/sass/_layout.scss */
+/* line 429, ../components/sass/_layout.scss */
 .google-maps {
   margin-top: 3.6rem;
   position: relative;
@@ -651,7 +662,7 @@ pre, table, fieldset, hr {
   overflow: hidden;
 }
 
-/* line 399, ../components/sass/_layout.scss */
+/* line 436, ../components/sass/_layout.scss */
 .google-maps iframe {
   position: absolute;
   top: 0;
@@ -659,101 +670,51 @@ pre, table, fieldset, hr {
   width: 100% !important;
 }
 
-/* line 409, ../components/sass/_layout.scss */
+/* line 448, ../components/sass/_layout.scss */
 .mini-chart {
   max-width: 100%;
   margin-left: 2%;
 }
 
-/* line 413, ../components/sass/_layout.scss */
+/* line 452, ../components/sass/_layout.scss */
 .royalSlider img {
   max-width: 100%;
 }
 
-/* line 419, ../components/sass/_layout.scss */
+/* line 460, ../components/sass/_layout.scss */
 .semantic-markup {
   display: none;
 }
 
-/* line 422, ../components/sass/_layout.scss */
+/* line 463, ../components/sass/_layout.scss */
 .hide-visibility {
   visibility: hidden;
 }
 
-/* line 425, ../components/sass/_layout.scss */
+/* line 466, ../components/sass/_layout.scss */
 .hide {
   display: none;
 }
 
-/* line 4, ../components/sass/_modules.scss */
-.topmenu a:hover {
-  border-bottom: 2px solid black;
-}
-
-/* line 10, ../components/sass/_modules.scss */
-.topmenu li:hover ul {
-  left: 0 !important;
-}
-
-/* line 14, ../components/sass/_modules.scss */
-.submenu a:hover {
-  border: none;
-}
-
-/* line 18, ../components/sass/_modules.scss */
-.dp-one a:hover {
-  background: #fff485;
-}
-
-/* line 21, ../components/sass/_modules.scss */
-.dp-two a:hover {
-  background: #ED6346;
-}
-
-/* line 24, ../components/sass/_modules.scss */
-.dp-three a:hover {
-  background: #71C5A6;
-}
-
-/* line 27, ../components/sass/_modules.scss */
-.dp-four a:hover {
-  background: #F8DB88;
-}
-
-/* line 30, ../components/sass/_modules.scss */
-.dp-five a:hover {
-  background: #F68E57;
-}
-
-/* line 33, ../components/sass/_modules.scss */
-.dp-six a:hover {
-  background: #B0DEA1;
-}
-
-/* line 36, ../components/sass/_modules.scss */
-.dp-seven a:hover {
-  background: #67CFCD;
-}
-
-/* line 43, ../components/sass/_modules.scss */
+/* line 8, ../components/sass/_modules.scss */
 .timeline-container {
   height: 100%;
   margin-top: 7.5rem;
 }
 @media (max-width: 886px) {
-  /* line 43, ../components/sass/_modules.scss */
+  /* line 8, ../components/sass/_modules.scss */
   .timeline-container {
     margin-top: 10.2rem;
   }
 }
 
-/* line 53, ../components/sass/_modules.scss */
+/* line 18, ../components/sass/_modules.scss */
 .timeline-container-type2 {
   height: 100%;
   margin-top: 3.0rem;
 }
 
-/* line 58, ../components/sass/_modules.scss */
+/* line 23, ../components/sass/_modules.scss */
 .timeline-circle, .timeline-circle-type2 {
   position: relative;
   top: 8px;
@@ -761,35 +722,36 @@ pre, table, fieldset, hr {
   width: 23px;
   height: 23px;
   background: black;
-  border: 5px solid rgba(0, 0, 0, 0.8);
+  border: 5px solid rgba(13, 13, 13, 0.8);
   border-radius: 50%;
   margin: 0 auto;
+  box-shadow: 0px 2px 2px rgba(13, 13, 13, 0.8);
 }
 
-/* line 69, ../components/sass/_modules.scss */
+/* line 36, ../components/sass/_modules.scss */
 .timeline-circle-type2 {
   top: 54px;
 }
 @media (max-width: 886px) {
-  /* line 69, ../components/sass/_modules.scss */
+  /* line 36, ../components/sass/_modules.scss */
   .timeline-circle-type2 {
     top: 80px;
   }
 }
 
-/* line 79, ../components/sass/_modules.scss */
+/* line 46, ../components/sass/_modules.scss */
 .timeline-line, .timeline-line-type2 {
   width: 50%;
   height: 100%;
-  border-right: 2.8px solid rgba(0, 0, 0, 0.8);
+  border-right: 4px solid rgba(26, 26, 26, 0.8);
 }
 
-/* line 84, ../components/sass/_modules.scss */
+/* line 52, ../components/sass/_modules.scss */
 .timeline-line-type2 {
   height: 6%;
 }
 @media (max-width: 886px) {
-  /* line 84, ../components/sass/_modules.scss */
+  /* line 52, ../components/sass/_modules.scss */
   .timeline-line-type2 {
     height: 8%;
   }
@@ -841,54 +803,141 @@ pre, table, fieldset, hr {
 }
 
 /* line 46, ../components/sass/styles.scss */
-#logo {
-  font-weight: 500;
-  text-transform: uppercase;
-}
-/* line 50, ../components/sass/styles.scss */
-#logo span {
-  font-weight: 200;
-}
-
-/* line 55, ../components/sass/styles.scss */
 #designProcessPageTitle {
   font-size: 4.8rem;
   line-height: 4.8rem;
 }
 
-/* line 62, ../components/sass/styles.scss */
+/* line 53, ../components/sass/styles.scss */
 .frontendProgramming h1 span {
   font-size: 3.6rem;
   font-weight: 200;
 }
 
-/* line 68, ../components/sass/styles.scss */
+/* line 59, ../components/sass/styles.scss */
 .large-p {
   font-size: 1.8rem;
   line-height: 2.7rem;
 }
 
-/* line 74, ../components/sass/styles.scss */
+/* line 65, ../components/sass/styles.scss */
 .link {
-  color: #2ead7f;
+  color: #0047ba;
 }
 
-/* line 80, ../components/sass/styles.scss */
-.current, a:hover.current {
-  border-bottom: 2px solid black;
+/* line 68, ../components/sass/styles.scss */
+.link:hover {
+  color: #0060FA;
+  transition: color 0.5s ease-in-out;
 }
 
-/* line 83, ../components/sass/styles.scss */
-.submenu {
+/* line 79, ../components/sass/styles.scss */
+#logo {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+/* line 82, ../components/sass/styles.scss */
+#logo span {
+  font-weight: 200;
+}
+
+/* line 87, ../components/sass/styles.scss */
+.current {
+  border-bottom: 2px solid #282422;
+}
+
+/* line 92, ../components/sass/styles.scss */
+.hover {
+  border-bottom: 2px solid rgba(8, 4, 1, 0);
+  -moz-transition: border-bottom 0.5s ease-in-out;
+  -webkit-transition: border-bottom 0.5s ease-in-out;
+  transition: border-bottom 0.5s ease-in-out;
+}
+
+/* line 98, ../components/sass/styles.scss */
+.hover:hover {
+  border-bottom: 2px solid rgba(8, 4, 1, 0.87);
+}
+
+/* line 104, ../components/sass/styles.scss */
+.topmenu li:hover ul {
+  left: 0 !important;
+}
+
+/* line 108, ../components/sass/styles.scss */
+.submenu li {
   background: #fffde6;
 }
 
-/* line 90, ../components/sass/styles.scss */
+/* line 113, ../components/sass/styles.scss */
+.dp-one a, .dp-two a, .dp-three a, .dp-four a, .dp-five a, .dp-six a, .dp-seven a {
+  -moz-transition: background-color 0.1s ease-in-out;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+}
+
+/* line 118, ../components/sass/styles.scss */
+.dp-one a:hover {
+  background: #fff485;
+}
+
+/* line 121, ../components/sass/styles.scss */
+.dp-two a:hover {
+  background: #ED6346;
+}
+
+/* line 124, ../components/sass/styles.scss */
+.dp-three a:hover {
+  background: #71C5A6;
+}
+
+/* line 127, ../components/sass/styles.scss */
+.dp-four a:hover {
+  background: #F8DB88;
+}
+
+/* line 130, ../components/sass/styles.scss */
+.dp-five a:hover {
+  background: #F68E57;
+}
+
+/* line 133, ../components/sass/styles.scss */
+.dp-six a:hover {
+  background: #B0DEA1;
+}
+
+/* line 136, ../components/sass/styles.scss */
+.dp-seven a:hover {
+  background: #67CFCD;
+}
+
+/* line 145, ../components/sass/styles.scss */
+#workSample div {
+  -moz-border-radius: 4px / 4px;
+  -webkit-border-radius: 4px 4px;
+  border-radius: 4px / 4px;
+}
+/* line 148, ../components/sass/styles.scss */
+#workSample img {
+  -moz-border-radius: 1px / 1px;
+  -webkit-border-radius: 1px 1px;
+  border-radius: 1px / 1px;
+}
+
+/* line 160, ../components/sass/styles.scss */
+#aboutPageContent img {
+  -moz-border-radius: 8px / 8px;
+  -webkit-border-radius: 8px 8px;
+  border-radius: 8px / 8px;
+}
+
+/* line 167, ../components/sass/styles.scss */
 #footer {
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* line 93, ../components/sass/styles.scss */
+/* line 170, ../components/sass/styles.scss */
 .footer-style {
   font-size: 1.2rem;
+  font-weight: 200;
 }

@@ -43,15 +43,6 @@
 
 
 // Typography ------------------------------------
-#logo {
-	font-weight: 500; //Medium
-	text-transform: uppercase;
-
-	span {
-		font-weight: 200; //Light
-		} //span
-} //logo
-
 #designProcessPageTitle {
 	font-size: 4.8rem;
 	line-height: 4.8rem;
@@ -72,24 +63,113 @@
 
 // Links ----------------------------------------
 .link {
-	color: darken($background-mint, 28%);
+	color: $link;
+}
+.link:hover {
+	color: $link-hover;
+	transition: color 0.5s ease-in-out;
 }
 
 
-// Menu -----------------------------------------
-.current, a:hover.current {
-	border-bottom: 2px solid black;
+// ------------------------------------------------
+// -------------------- HEADER --------------------
+// ------------------------------------------------
+
+// -------------------- Logo ----------------------
+#logo {
+	font-weight: 500; //Medium
+	text-transform: uppercase;
+	span {font-weight: 200;} //ExtraLight
 }
-.submenu {
+
+// ------------------ Main Nav -------------------
+// Active Page and Hover Behavior
+.current {
+	border-bottom: 2px solid $paleblack-base;
+}
+
+// Not-active Page Menu Behavior on Hover
+.hover {
+	border-bottom: 2px solid rgba(8,4,1,0);
+	-moz-transition: border-bottom 0.5s ease-in-out;
+	-webkit-transition: border-bottom 0.5s ease-in-out;
+	transition: border-bottom 0.5s ease-in-out;
+}
+.hover:hover {
+	border-bottom: 2px solid rgba(8,4,1,.87);
+}
+
+// ----------------- Sub Menu --------------------
+// Dropdown on hover
+.topmenu li:hover ul {
+	left: 0 !important;
+}
+// Submenu initial background color
+.submenu li { 
 	background: lighten($background-yellow, 4%);
 }
 
+// Submenu background change on hover with transition
+.dp-one a, .dp-two a, .dp-three a, .dp-four a, .dp-five a, .dp-six a, .dp-seven a {
+	-moz-transition: background-color 0.1s ease-in-out;
+	-webkit-transition: background-color 0.1s ease-in-out;
+	transition: background-color 0.1s ease-in-out;
+}
+.dp-one a:hover {
+	background: darken($background-yellow, 15%);
+}
+.dp-two a:hover {
+	background: $grapefruit;
+}
+.dp-three a:hover {
+	background: $melon;
+}
+.dp-four a:hover {
+	background: $honey;
+}
+.dp-five a:hover {
+	background: $orange;
+}
+.dp-six a:hover {
+	background: $mint;
+}
+.dp-seven a:hover {
+	background: $background-aqua;
+}
 
 
-// Footer ---------------------------------------
+// ------------------------------------------------
+// ----------------- Skills 2 - 6 -----------------
+// ------------------------------------------------
+#workSample {
+	div {
+		@include border-radius(4px, 4px);
+	}
+	img {
+		@include border-radius(1px, 1px);
+	}
+}
+
+
+// ------------------------------------------------
+// ----------------- ABOUT PAGE -------------------
+// ------------------------------------------------
+
+// Image Border Radius
+#aboutPageContent {
+	img { @include border-radius(8px, 8px);}
+}
+
+
+// ------------------------------------------------
+// ------------------ Footer ----------------------
+// ------------------------------------------------
 #footer {
 	background: rgba(255,255,255,0.1);
 }
 .footer-style {
 	font-size: 1.2rem;
+	font-weight: 200;
 }
+
+
