@@ -26,12 +26,13 @@
 	left: -1.5px;
 	width: 23px;
 	height: 23px;
-	background: black;
-	border: 5px solid lighten($paleblack-display, 5%);
+	background: $black;
+	border: 5px solid $black;
 	border-radius: 50%;
 	margin: 0 auto;
-	box-shadow: 0px 2px 2px lighten($paleblack-display, 5%);
+	box-shadow: 0px 2px 2px lighten($black, 5%);
 }
+//lighten($paleblack-display, 5%);
 
 .timeline-circle-type2 {
 	// LARGE LAYOUT ************

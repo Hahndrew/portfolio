@@ -10,52 +10,9 @@
 @import "layout";
 @import "modules";
 
-
-// Background Colors -----------------------------
-
-.designProcess {
-	background-color: $background-yellow;
-}
-.productDefinition {
-	background-color: $background-grapefruit;
-}
-.researchAnalysis {
-	background-color: $background-mint;
-}
-.interactionDesign {
-	background-color: $background-honey;
-}
-.wireframePrototype {
-	background-color: $background-salmon;
-}
-.usabilityEvaluation {
-	background-color: $background-melon;
-}
-.frontendProgramming {
-	background-color: $background-aqua;
-}
-.about {
-	background-color: $background-yellow;
-}
-.connect {
-	background-color: $background-yellow;
-}
-
-
-// Typography ------------------------------------
-#designProcessPageTitle {
-	font-size: 4.8rem;
-	line-height: 4.8rem;
-}
-
-.frontendProgramming {
-	h1 {
-		span {
-			font-size: 3.6rem;
-			font-weight: 200;}
-	} //h1
-} //frontendProgramming
-
+// ------------------------------------------------
+// ---------------- TYPOGRAPHY --------------------
+// ------------------------------------------------
 .large-p {
 	font-size: 1.8rem;
 	line-height: 2.7rem;
@@ -72,14 +29,77 @@
 
 
 // ------------------------------------------------
+// -------------------- SPLASH --------------------
+// ------------------------------------------------
+.full-screen-body {
+	a {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+	}
+}
+#splash-main-content {
+
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	div {
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	hgroup {
+		text-align: center;
+		margin-bottom: 0;
+	}
+	hgroup > h1 {
+		font-family: $display-font;
+		font-size: 2.1rem;
+		font-weight: 700;
+		color: rgba(8,4,1,.70);
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		line-height: 2.1rem;
+		margin-bottom: 0;
+	}
+	hgroup > h2 {
+		position: relative;
+		left: 1.5px;
+		font-family: $display-font;
+		font-size: 1.2rem;
+		font-weight: 300;
+		color: rgba(8,4,1,.80);
+		letter-spacing: 4.5px;
+		line-height: 1.2rem;
+		margin-bottom: 0;
+	}
+	p {
+		position: relative;
+		top: 50px;
+		font-size: 1.4rem;
+		font-weight: 300;
+		color: rgba(8,4,1,.70);
+		letter-spacing: 0.5px;
+		text-align: center;
+		margin-bottom: 0;
+	}
+
+}
+
+
+// ------------------------------------------------
 // -------------------- HEADER --------------------
 // ------------------------------------------------
-
-// -------------------- Logo ----------------------
 #logo {
 	font-weight: 500; //Medium
 	text-transform: uppercase;
-	.ux {font-weight: 200;} //ExtraLight
+	.ux {
+		text-transform: none;
+		font-weight: 200;} //ExtraLight
 	a .a, a .n, a .d, a .r, a .e, a .w, a .h-1, a .h-2 {
 		-moz-transition: color 0.3s ease-in-out;
 		-webkit-transition: color 0.3s ease-in-out;
@@ -176,13 +196,10 @@
 }
 
 // Submenu background change on hover with transition
-.dp-one a, .dp-two a, .dp-three a, .dp-four a, .dp-five a, .dp-six a, .dp-seven a {
+.dp-two a, .dp-three a, .dp-four a, .dp-five a, .dp-six a, .dp-seven a {
 	-moz-transition: background-color 0.15s ease-in-out;
 	-webkit-transition: background-color 0.15s ease-in-out;
 	transition: background-color 0.15s ease-in-out;
-}
-.dp-one a:hover {
-	background: darken($background-yellow, 15%);
 }
 .dp-two a:hover {
 	background: $grapefruit;
@@ -205,8 +222,49 @@
 
 
 // ------------------------------------------------
+// ------------------- Skills 1 -------------------
+// ------------------------------------------------
+#designProcessPageTitle {
+	font-size: 4.8rem;
+	line-height: 4.8rem;
+}
+
+
+// ------------------------------------------------
 // ----------------- Skills 2 - 6 -----------------
 // ------------------------------------------------
+
+// Background Colors -----------------------------
+
+.designProcess {
+	background-color: $background-yellow;
+}
+.productDefinition {
+	background-color: $background-grapefruit;
+}
+.researchAnalysis {
+	background-color: $background-mint;
+}
+.interactionDesign {
+	background-color: $background-honey;
+}
+.wireframePrototype {
+	background-color: $background-salmon;
+}
+.usabilityEvaluation {
+	background-color: $background-melon;
+}
+.frontendProgramming {
+	background-color: $background-aqua;
+}
+.about {
+	background-color: $background-yellow;
+}
+.connect {
+	background-color: $background-yellow;
+}
+
+
 #skills ul {
 	list-style-type: square;
 }
@@ -217,6 +275,14 @@
 	}
 	img {
 		@include border-radius(1px, 1px);
+	}
+}
+
+.frontendProgramming {
+	h1 {
+		span {
+			font-size: 3.6rem;
+			font-weight: 300;}
 	}
 }
 
