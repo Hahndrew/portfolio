@@ -79,16 +79,79 @@
 #logo {
 	font-weight: 500; //Medium
 	text-transform: uppercase;
-	span {font-weight: 200;} //ExtraLight
+	.ux {font-weight: 200;} //ExtraLight
+	a .a, a .n, a .d, a .r, a .e, a .w, a .h-1, a .h-2 {
+		-moz-transition: color 0.3s ease-in-out;
+		-webkit-transition: color 0.3s ease-in-out;
+		transition: color 0.3s ease-in-out;}
+}
+// Change Color on Hover
+#logo a:hover .a {
+	color: darken($grapefruit, 7%);
+}
+#logo a:hover .n {
+	color: darken($melon, 10%);
+}
+#logo a:hover .d {
+	color: darken($honey, 20%);
+}
+#logo a:hover .r {
+	color: darken($orange, 10%);
+}
+#logo a:hover .e {
+	color: darken($mint, 10%);
+}
+#logo a:hover .w {
+	color: darken($background-aqua, 10%);
+}
+#logo a:hover .h-1 {
+	color: darken($melon, 10%);
+}
+#logo a:hover .h-2 {
+	color: darken($honey, 20%);
 }
 
 // ------------------ Main Nav -------------------
 // Active Page and Hover Behavior
 .current {
-	border-bottom: 2px solid $paleblack-base;
+    box-shadow: 0px -2px 0px $paleblack-base inset;
 }
 
 // Not-active Page Menu Behavior on Hover
+// credit: https://github.com/IanLunn/Hover
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: $paleblack-base;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+/* THIS IS OLD CODE for reference
 .hover {
 	border-bottom: 2px solid rgba(8,4,1,0);
 	-moz-transition: border-bottom 0.5s ease-in-out;
@@ -98,6 +161,9 @@
 .hover:hover {
 	border-bottom: 2px solid rgba(8,4,1,.87);
 }
+*/
+
+
 
 // ----------------- Sub Menu --------------------
 // Dropdown on hover
@@ -111,9 +177,9 @@
 
 // Submenu background change on hover with transition
 .dp-one a, .dp-two a, .dp-three a, .dp-four a, .dp-five a, .dp-six a, .dp-seven a {
-	-moz-transition: background-color 0.1s ease-in-out;
-	-webkit-transition: background-color 0.1s ease-in-out;
-	transition: background-color 0.1s ease-in-out;
+	-moz-transition: background-color 0.15s ease-in-out;
+	-webkit-transition: background-color 0.15s ease-in-out;
+	transition: background-color 0.15s ease-in-out;
 }
 .dp-one a:hover {
 	background: darken($background-yellow, 15%);
@@ -141,6 +207,10 @@
 // ------------------------------------------------
 // ----------------- Skills 2 - 6 -----------------
 // ------------------------------------------------
+#skills ul {
+	list-style-type: square;
+}
+
 #workSample {
 	div {
 		@include border-radius(4px, 4px);
