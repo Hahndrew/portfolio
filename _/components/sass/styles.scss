@@ -109,6 +109,11 @@
 	&:hover {
 		text-shadow: 1.5px 1.5px #ff0000;
 	}
+
+	@include breakpoint($xsmall) {
+		font-size: 1.2rem;
+	}
+
 }
 // Change Color on Hover
 #logo a:hover .a {
@@ -187,6 +192,12 @@
 	border-bottom: 2px solid rgba(8,4,1,.87);
 }
 */
+
+#mainNav-mobile {
+	a {
+		font-size: 1.2rem;
+	}
+}
 
 
 
@@ -310,7 +321,7 @@
 }
 .footer-style {
 	font-size: 1.2rem;
-	font-weight: 200;
+	font-weight: 400;
 }
 
 

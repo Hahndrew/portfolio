@@ -47,7 +47,15 @@ pre,table,fieldset,hr{
 	z-index: 100;
 	padding: 1.2rem;
 
-	#logo { float: left;} //logo
+	#logo { 
+		float: left;
+		.ux {
+			@include breakpoint($xsmall) {
+			display: none;}
+		} //end of .ux
+	} //end of logo
+
+	// DESKTOP & TABLET ----------------------------
 
 	#mainNav {
 		float: right;
@@ -97,7 +105,8 @@ pre,table,fieldset,hr{
 	} //mainNav
 
 
-	// ***************************** NEED TO BE FIXED *******************
+	// MOBILE -------------------------------------
+
 	#mainNav-mobile {
 		float: right;
 		display: none;
@@ -105,53 +114,17 @@ pre,table,fieldset,hr{
 		// Show on xsmall layout
 		@include breakpoint($xsmall) {
 			display: block;
-			
-			.click-nav {
-				margin:100px auto;
-				width: 200px;
-				ul {
-					position: relative;
-					li {
-						position: relative;
-						cursor: pointer;
-						ul {
-							position: absolute;
-							left: 0;
-							right: 0;}
-					} //li
-				} //ul
-			}
-			.click-nav ul .clicker {
-				position: relative;
-				backgroudn: #2284B5;
-				color: #FFF;
-			}
-			.click-nav ul .clicker:hover,
-			.click-nav ul .active {
-				background: #196F9A;
-			}
-			.click-nav ul li a {
-				transition: background-color 0.2s ease-in-out;
-				-webkit-transition: background-color 0.2s ease-in-out;
-				-moz-transition: background-color 0.2s ease-in-out;
-				display: block;
-				padding: 8px 10px 8px 40px;
-				background: #FFF;
-				color: #333;
-			}
-			.click-nav ul li a:hover {
-				background: #F2F2F2;
-			}
 
-			// Fallbacks
-			.click-nav .no-js ul {display: none;}
-			.click-nav .no-js:hover ul {display:block;}
+			li {
+				display: inline-block;
+				padding-left: 1.2rem;}
+			li:first-child {
+				padding-left: 0;}
+		} //end of breakpoint
+	} //end of #mainNav-mobile
 
-		}
-	}
-	// ***************************************************************
 
-} //pageHeader
+} //end of pageHeader
 
 // ------------------------------------------------
 // ------------------ Footer ----------------------
