@@ -60,8 +60,8 @@
 		font-family: $display-font;
 		font-size: 2.1rem;
 		font-weight: 700;
-		color: rgba(8,4,1,.70);
-		letter-spacing: 1px;
+		color: rgba(8,4,1,.80);
+		letter-spacing: 1.75px;
 		text-transform: uppercase;
 		line-height: 2.1rem;
 		margin-bottom: 0;
@@ -69,9 +69,9 @@
 	hgroup > h2 {
 		position: relative;
 		left: 1.5px;
-		font-family: $display-font;
+		font-family: $base-font;
 		font-size: 1.2rem;
-		font-weight: 300;
+		font-weight: 400;
 		color: rgba(8,4,1,.80);
 		letter-spacing: 4.5px;
 		line-height: 1.2rem;
@@ -81,11 +81,13 @@
 		position: relative;
 		top: 50px;
 		font-size: 1.4rem;
-		font-weight: 300;
-		color: rgba(8,4,1,.70);
+		font-weight: 400;
+		color: rgba(8,4,1,.50);
 		letter-spacing: 0.5px;
 		text-align: center;
 		margin-bottom: 0;
+		padding-left: 2.4rem;
+		padding-right: 2.4rem;
 	}
 
 }
@@ -104,6 +106,9 @@
 		-moz-transition: color 0.3s ease-in-out;
 		-webkit-transition: color 0.3s ease-in-out;
 		transition: color 0.3s ease-in-out;}
+	&:hover {
+		text-shadow: 1.5px 1.5px #ff0000;
+	}
 }
 // Change Color on Hover
 #logo a:hover .a {

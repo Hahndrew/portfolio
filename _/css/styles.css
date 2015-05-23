@@ -806,8 +806,8 @@ pre, table, fieldset, hr {
   font-family: "Gotham A", "Gotham B", sans-serif;
   font-size: 2.1rem;
   font-weight: 700;
-  color: rgba(8, 4, 1, 0.7);
-  letter-spacing: 1px;
+  color: rgba(8, 4, 1, 0.8);
+  letter-spacing: 1.75px;
   text-transform: uppercase;
   line-height: 2.1rem;
   margin-bottom: 0;
@@ -816,9 +816,9 @@ pre, table, fieldset, hr {
 #splash-main-content hgroup > h2 {
   position: relative;
   left: 1.5px;
-  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 400;
   color: rgba(8, 4, 1, 0.8);
   letter-spacing: 4.5px;
   line-height: 1.2rem;
@@ -829,76 +829,82 @@ pre, table, fieldset, hr {
   position: relative;
   top: 50px;
   font-size: 1.4rem;
-  font-weight: 300;
-  color: rgba(8, 4, 1, 0.7);
+  font-weight: 400;
+  color: rgba(8, 4, 1, 0.5);
   letter-spacing: 0.5px;
   text-align: center;
   margin-bottom: 0;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
 }
 
-/* line 97, ../components/sass/styles.scss */
+/* line 99, ../components/sass/styles.scss */
 #logo {
   font-weight: 500;
   text-transform: uppercase;
 }
-/* line 100, ../components/sass/styles.scss */
+/* line 102, ../components/sass/styles.scss */
 #logo .ux {
   text-transform: none;
   font-weight: 200;
 }
-/* line 103, ../components/sass/styles.scss */
+/* line 105, ../components/sass/styles.scss */
 #logo a .a, #logo a .n, #logo a .d, #logo a .r, #logo a .e, #logo a .w, #logo a .h-1, #logo a .h-2 {
   -moz-transition: color 0.3s ease-in-out;
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
-
 /* line 109, ../components/sass/styles.scss */
+#logo:hover {
+  text-shadow: 1.5px 1.5px #ff0000;
+}
+
+/* line 114, ../components/sass/styles.scss */
 #logo a:hover .a {
   color: #ea4825;
 }
 
-/* line 112, ../components/sass/styles.scss */
+/* line 117, ../components/sass/styles.scss */
 #logo a:hover .n {
   color: #4db68f;
 }
 
-/* line 115, ../components/sass/styles.scss */
+/* line 120, ../components/sass/styles.scss */
 #logo a:hover .d {
   color: #f2be28;
 }
 
-/* line 118, ../components/sass/styles.scss */
+/* line 123, ../components/sass/styles.scss */
 #logo a:hover .r {
   color: #f36d27;
 }
 
-/* line 121, ../components/sass/styles.scss */
+/* line 126, ../components/sass/styles.scss */
 #logo a:hover .e {
   color: #90d17b;
 }
 
-/* line 124, ../components/sass/styles.scss */
+/* line 129, ../components/sass/styles.scss */
 #logo a:hover .w {
   color: #40c3c0;
 }
 
-/* line 127, ../components/sass/styles.scss */
+/* line 132, ../components/sass/styles.scss */
 #logo a:hover .h-1 {
   color: #4db68f;
 }
 
-/* line 130, ../components/sass/styles.scss */
+/* line 135, ../components/sass/styles.scss */
 #logo a:hover .h-2 {
   color: #f2be28;
 }
 
-/* line 136, ../components/sass/styles.scss */
+/* line 141, ../components/sass/styles.scss */
 .current {
   box-shadow: 0px -2px 0px #282422 inset;
 }
 
-/* line 142, ../components/sass/styles.scss */
+/* line 147, ../components/sass/styles.scss */
 .hvr-underline-from-center {
   display: inline-block;
   vertical-align: middle;
@@ -912,7 +918,7 @@ pre, table, fieldset, hr {
   overflow: hidden;
 }
 
-/* line 154, ../components/sass/styles.scss */
+/* line 159, ../components/sass/styles.scss */
 .hvr-underline-from-center:before {
   content: "";
   position: absolute;
@@ -930,7 +936,7 @@ pre, table, fieldset, hr {
   transition-timing-function: ease-out;
 }
 
-/* line 170, ../components/sass/styles.scss */
+/* line 175, ../components/sass/styles.scss */
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
   left: 0;
   right: 0;
@@ -947,141 +953,141 @@ pre, table, fieldset, hr {
 	border-bottom: 2px solid rgba(8,4,1,.87);
 }
 */
-/* line 190, ../components/sass/styles.scss */
+/* line 195, ../components/sass/styles.scss */
 .topmenu li:hover ul {
   left: 0 !important;
 }
 
-/* line 194, ../components/sass/styles.scss */
+/* line 199, ../components/sass/styles.scss */
 .submenu li {
   background: #fffde6;
 }
 
-/* line 199, ../components/sass/styles.scss */
+/* line 204, ../components/sass/styles.scss */
 .dp-two a, .dp-three a, .dp-four a, .dp-five a, .dp-six a, .dp-seven a {
   -moz-transition: background-color 0.15s ease-in-out;
   -webkit-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
 }
 
-/* line 204, ../components/sass/styles.scss */
+/* line 209, ../components/sass/styles.scss */
 .dp-two a:hover {
   background: #ED6346;
 }
 
-/* line 207, ../components/sass/styles.scss */
+/* line 212, ../components/sass/styles.scss */
 .dp-three a:hover {
   background: #71C5A6;
 }
 
-/* line 210, ../components/sass/styles.scss */
+/* line 215, ../components/sass/styles.scss */
 .dp-four a:hover {
   background: #F8DB88;
 }
 
-/* line 213, ../components/sass/styles.scss */
+/* line 218, ../components/sass/styles.scss */
 .dp-five a:hover {
   background: #F68E57;
 }
 
-/* line 216, ../components/sass/styles.scss */
+/* line 221, ../components/sass/styles.scss */
 .dp-six a:hover {
   background: #B0DEA1;
 }
 
-/* line 219, ../components/sass/styles.scss */
+/* line 224, ../components/sass/styles.scss */
 .dp-seven a:hover {
   background: #67CFCD;
 }
 
-/* line 227, ../components/sass/styles.scss */
+/* line 232, ../components/sass/styles.scss */
 #designProcessPageTitle {
   font-size: 4.8rem;
   line-height: 4.8rem;
 }
 
-/* line 239, ../components/sass/styles.scss */
+/* line 244, ../components/sass/styles.scss */
 .designProcess {
   background-color: #FFFBD2;
 }
 
-/* line 242, ../components/sass/styles.scss */
+/* line 247, ../components/sass/styles.scss */
 .productDefinition {
   background-color: #FF9985;
 }
 
-/* line 245, ../components/sass/styles.scss */
+/* line 250, ../components/sass/styles.scss */
 .researchAnalysis {
   background-color: #8AE0C1;
 }
 
-/* line 248, ../components/sass/styles.scss */
+/* line 253, ../components/sass/styles.scss */
 .interactionDesign {
   background-color: #FFF59C;
 }
 
-/* line 251, ../components/sass/styles.scss */
+/* line 256, ../components/sass/styles.scss */
 .wireframePrototype {
   background-color: #FFAB7E;
 }
 
-/* line 254, ../components/sass/styles.scss */
+/* line 259, ../components/sass/styles.scss */
 .usabilityEvaluation {
   background-color: #A5D695;
 }
 
-/* line 257, ../components/sass/styles.scss */
+/* line 262, ../components/sass/styles.scss */
 .frontendProgramming {
   background-color: #67CFCD;
 }
 
-/* line 260, ../components/sass/styles.scss */
+/* line 265, ../components/sass/styles.scss */
 .about {
   background-color: #FFFBD2;
 }
 
-/* line 263, ../components/sass/styles.scss */
+/* line 268, ../components/sass/styles.scss */
 .connect {
   background-color: #FFFBD2;
 }
 
-/* line 268, ../components/sass/styles.scss */
+/* line 273, ../components/sass/styles.scss */
 #skills ul {
   list-style-type: square;
 }
 
-/* line 273, ../components/sass/styles.scss */
+/* line 278, ../components/sass/styles.scss */
 #workSample div {
   -moz-border-radius: 4px / 4px;
   -webkit-border-radius: 4px 4px;
   border-radius: 4px / 4px;
 }
-/* line 276, ../components/sass/styles.scss */
+/* line 281, ../components/sass/styles.scss */
 #workSample img {
   -moz-border-radius: 1px / 1px;
   -webkit-border-radius: 1px 1px;
   border-radius: 1px / 1px;
 }
 
-/* line 283, ../components/sass/styles.scss */
+/* line 288, ../components/sass/styles.scss */
 .frontendProgramming h1 span {
   font-size: 3.6rem;
   font-weight: 300;
 }
 
-/* line 296, ../components/sass/styles.scss */
+/* line 301, ../components/sass/styles.scss */
 #aboutPageContent img {
   -moz-border-radius: 8px / 8px;
   -webkit-border-radius: 8px 8px;
   border-radius: 8px / 8px;
 }
 
-/* line 303, ../components/sass/styles.scss */
+/* line 308, ../components/sass/styles.scss */
 #footer {
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* line 306, ../components/sass/styles.scss */
+/* line 311, ../components/sass/styles.scss */
 .footer-style {
   font-size: 1.2rem;
   font-weight: 200;
