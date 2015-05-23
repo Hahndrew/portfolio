@@ -205,7 +205,7 @@ pre, table, fieldset, hr {
   height: auto;
   position: absolute;
   z-index: 10;
-  top: 3.8rem;
+  top: 3.6rem;
   left: -9000rem;
 }
 /* line 72, ../components/sass/_layout.scss */
@@ -696,25 +696,105 @@ pre, table, fieldset, hr {
   display: none;
 }
 
-/* line 8, ../components/sass/_modules.scss */
+/* line 4, ../components/sass/_modules.scss */
+.fadeInQuick {
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: fadein;
+  animation-duration: 0.5s;
+  animation-name: fadein;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 19, ../components/sass/_modules.scss */
+.fadeIn {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-name: fadein;
+  animation-duration: 2s;
+  animation-name: fadein;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 34, ../components/sass/_modules.scss */
+.fadeInUp {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-name: fadeinup;
+  animation-duration: 2s;
+  animation-name: fadeinup;
+}
+
+@-webkit-keyframes fadeinup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeinup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+/* line 61, ../components/sass/_modules.scss */
 .timeline-container {
   height: 100%;
   margin-top: 7.5rem;
 }
 @media (max-width: 886px) {
-  /* line 8, ../components/sass/_modules.scss */
+  /* line 61, ../components/sass/_modules.scss */
   .timeline-container {
     margin-top: 10.2rem;
   }
 }
 
-/* line 18, ../components/sass/_modules.scss */
+/* line 71, ../components/sass/_modules.scss */
 .timeline-container-type2 {
   height: 100%;
   margin-top: 3.0rem;
 }
 
-/* line 23, ../components/sass/_modules.scss */
+/* line 76, ../components/sass/_modules.scss */
 .timeline-circle, .timeline-circle-type2 {
   position: relative;
   top: 8px;
@@ -728,30 +808,30 @@ pre, table, fieldset, hr {
   box-shadow: 0px 2px 2px #1f0f04;
 }
 
-/* line 37, ../components/sass/_modules.scss */
+/* line 90, ../components/sass/_modules.scss */
 .timeline-circle-type2 {
   top: 54px;
 }
 @media (max-width: 886px) {
-  /* line 37, ../components/sass/_modules.scss */
+  /* line 90, ../components/sass/_modules.scss */
   .timeline-circle-type2 {
     top: 80px;
   }
 }
 
-/* line 47, ../components/sass/_modules.scss */
+/* line 100, ../components/sass/_modules.scss */
 .timeline-line, .timeline-line-type2 {
   width: 50%;
   height: 100%;
   border-right: 4px solid rgba(26, 26, 26, 0.75);
 }
 
-/* line 53, ../components/sass/_modules.scss */
+/* line 106, ../components/sass/_modules.scss */
 .timeline-line-type2 {
   height: 6%;
 }
 @media (max-width: 886px) {
-  /* line 53, ../components/sass/_modules.scss */
+  /* line 106, ../components/sass/_modules.scss */
   .timeline-line-type2 {
     height: 8%;
   }

@@ -1,10 +1,63 @@
-// Menu ------------------------------------------
+// --------------------------------------------------
+// ------------------- ANIMATIONS -------------------
+// --------------------------------------------------
+.fadeInQuick {
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-name: fadein;
+	animation-duration: 0.5s;
+	animation-name: fadein;
+}
+@-webkit-keyframes fadeIn {
+	0%		{opacity: 0;}
+	100%	{opacity: 1;}
+}
+@keyframes fadein {
+	0%		{opacity: 0;}
+	100%	{opacity: 1;}
+}
+
+.fadeIn {
+	-webkit-animation-duration: 2s;
+	-webkit-animation-name: fadein;
+	animation-duration: 2s;
+	animation-name: fadein;
+}
+@-webkit-keyframes fadeIn {
+	0%		{opacity: 0;}
+	100%	{opacity: 1;}
+}
+@keyframes fadein {
+	0%		{opacity: 0;}
+	100%	{opacity: 1;}
+}
+
+.fadeInUp {
+	-webkit-animation-duration: 2s;
+	-webkit-animation-name: fadeinup;
+	animation-duration: 2s;
+	animation-name: fadeinup;
+}
+@-webkit-keyframes fadeinup {
+	0%		{opacity: 0;
+			 -webkit-transform: translate3d(0, 100%, 0);
+   			 transform: translate3d(0, 100%, 0);}
+	100%	{opacity: 1;
+			 -webkit-transform: none;
+    		 transform: none;}
+}
+@keyframes fadeinup {
+	0%		{opacity: 0;
+			 -webkit-transform: translate3d(0, 100%, 0);
+   			 transform: translate3d(0, 100%, 0);}
+	100%	{opacity: 1;
+			 -webkit-transform: none;
+    		 transform: none;}
+}
 
 
-// -------------------------------------------------
-
-
-// Timeline ----------------------------------------
+// --------------------------------------------------
+// ------------------- TIMELINE ---------------------
+// --------------------------------------------------
 .timeline-container {
 	// LARGE LAYOUT ************
 	height: 100%;
