@@ -108,9 +108,6 @@
 		-moz-transition: color 0.3s ease-in-out;
 		-webkit-transition: color 0.3s ease-in-out;
 		transition: color 0.3s ease-in-out;}
-	&:hover {
-		text-shadow: 1.5px 1.5px #ff0000;
-	}
 
 	@include breakpoint($xsmall) {
 		font-size: 1.2rem;
