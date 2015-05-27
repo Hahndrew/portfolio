@@ -20,7 +20,7 @@ $(document).ready(function($) {
     // Set austoScrolling to false at tablet and mobile breakpoints
     $(window).resize(function() {
 
-        if ($(window).width() < 887) {
+        if ($(window).width() < 887 || $(window).height() < 790) {
             $.fn.fullpage.setAutoScrolling(false);
         } else {
             $.fn.fullpage.setAutoScrolling(true);
@@ -45,23 +45,5 @@ $(document).ready(function($) {
 		globalCaption: true
 
 	}); //royalSlider
-
-    // mainNav-mobile ------------------------------------------------------------
-    // ---------------------------------------------------------------------------
-    $(function () {
-        $('.click-nav > ul').toggleClass('no-js js');
-        $('.click-nav .js ul').hide();
-        $('.click-nav .js').click(function(e) {
-            $('.click-nav .js ul').slideToggle(200);
-            $('.clicker').toggleClass('active');
-            e.stopPropagation();
-        });
-        $(document).click(function() {
-            if ($('.click-nav .js ul').is(':visible')) {
-                $('.click-nav .js ul', this).slideUp();
-                $('.clicker').removeClass('active');
-            }
-        });
-    });
 
 });//ready()
