@@ -223,6 +223,10 @@ pre,table,fieldset,hr{
 		margin-bottom: 1.2rem;
 		margin-left: 1.2rem;
 	}
+	span {
+		@include breakpoint($small) {
+			font-size: 2.8rem;}
+	}
 
 }
 .frontendProgramming #skillsPageTitle {
@@ -271,7 +275,6 @@ pre,table,fieldset,hr{
 
 	// XSMALL LAYOUT ************
 	@include breakpoint($xsmall) {
-		margin-left: 1.2rem;
 		display: none;
 	}
 
