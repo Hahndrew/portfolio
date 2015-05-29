@@ -1,6 +1,16 @@
 // Slider Init & Options ----------------------------------------
 $(document).ready(function($) {
 
+    // Make sure auto scrolling is disabled on load for
+    // tablet and mobile
+    window.onload = function() {
+        if ($(window).width() < 887) {
+            $.fn.fullpage.setAutoScrolling(false);
+        } else {
+            $.fn.fullpage.setAutoScrolling(true);
+        }
+    }
+
 
     // Layout fix for short viewport on load -----------------
     // -------------------------------------------------------
@@ -72,6 +82,7 @@ $(document).ready(function($) {
         }
 
     }); //end of resize()
+
 
 
 
