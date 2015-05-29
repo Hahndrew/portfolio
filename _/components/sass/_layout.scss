@@ -272,6 +272,7 @@ pre,table,fieldset,hr{
 	// XSMALL LAYOUT ************
 	@include breakpoint($xsmall) {
 		margin-left: 1.2rem;
+		display: none;
 	}
 
 }
