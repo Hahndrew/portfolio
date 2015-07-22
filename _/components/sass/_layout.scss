@@ -174,6 +174,7 @@ pre,table,fieldset,hr{
 		@include span(10);
 		@include push(1);
 		img { max-width: 100%;}
+		svg { max-width: 100%;}
 	}//figure
 
 }
